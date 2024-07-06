@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <article className='mt-8 prose prose-slate mx-auto lg:prose-xl'>
-      <h2>Contact</h2>
+    <article className='mt-8 prose prose-slate prose-headings:text-center mx-auto lg:prose-xl'>
+      <h3>Contact</h3>
     </article>
   );
 };
