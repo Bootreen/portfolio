@@ -1,8 +1,9 @@
+import { headerContainer } from "./header.style";
 import Title from "../title/title.component";
 import NavBar from "../navbar/navbar.component";
 
 const Header = () => (
-  <header className='pt-6 bg-base-300'>
+  <header className={headerContainer}>
     <Title />
     <NavBar />
   </header>

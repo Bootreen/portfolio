@@ -1,11 +1,9 @@
+import { navBarCenter, menuButton } from "./menu-item.style";
 import { NavLink } from "react-router-dom";
 
 const MenuItem = ({ path, caption }) => (
-  <div className='navbar-center'>
-    <NavLink
-      className='btn btn-ghost text-secondary md:text-xl xl:text-2xl'
-      to={path}
-    >
+  <div className={navBarCenter}>
+    <NavLink className={menuButton} to={path}>
       {caption}
     </NavLink>
   </div>

@@ -1,6 +1,8 @@
+import { aboutStyle } from "./about.style";
+
 const About = () => {
   return (
-    <article className='mt-8 prose prose-slate prose-headings:text-center mx-auto lg:prose-xl'>
+    <article className={aboutStyle}>
       <h3>About</h3>
     </article>
   );

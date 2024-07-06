@@ -1,6 +1,8 @@
+import { contactContainer } from "./contact.style";
+
 const Contact = () => {
   return (
-    <article className='mt-8 prose prose-slate prose-headings:text-center mx-auto lg:prose-xl'>
+    <article className={contactContainer}>
       <h3>Contact</h3>
     </article>
   );
