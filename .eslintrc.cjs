@@ -10,9 +10,8 @@ module.exports = {
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   settings: { react: { version: "18.2" } },
-  plugins: ["react-refresh", "@emotion"],
+  plugins: ["react-refresh"],
   rules: {
-    "@emotion/jsx-import": "error",
     "react/prop-types": 0,
     "react/jsx-no-target-blank": "off",
     "react-refresh/only-export-components": [
