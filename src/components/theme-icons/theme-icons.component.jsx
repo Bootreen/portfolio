@@ -1,6 +1,6 @@
-export const Sun = ({ size }) => (
+export const Day = () => (
   <svg
-    className={`swap-on h-${size} w-${size} fill-current`}
+    className='swap-on fill-current w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7'
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 24 24'
   >
@@ -8,9 +8,9 @@ export const Sun = ({ size }) => (
   </svg>
 );
 
-export const Moon = ({ size }) => (
+export const Night = () => (
   <svg
-    className={`swap-off h-${size} w-${size} fill-current`}
+    className='swap-off fill-current w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7'
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 24 24'
   >

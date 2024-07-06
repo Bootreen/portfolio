@@ -2,7 +2,7 @@
 import "../css/styles.css";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import RootLayout from "./routes/RootLayout.jsx";
+import RootLayout from "./routes/root/rootlayout.jsx";
 import Home from "./routes/Home.jsx";
 import About from "./routes/About.jsx";
 import Projects from "./routes/Projects.jsx";
