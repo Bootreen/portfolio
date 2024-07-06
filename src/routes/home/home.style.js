@@ -1,2 +1,2 @@
 export const homeContainer =
-  "mt-8 prose prose-slate prose-headings:text-center mx-auto lg:prose-xl";
+  "mt-8 prose prose-slate prose-headings:text-center mx-auto lg:prose-xl px-4";
