@@ -3,12 +3,12 @@ import { immer } from "zustand/middleware/immer";
 
 export const usePortfolioStore = create(
   immer((set) => ({
-    theme: "fantasy", // default light theme
+    theme: "corporate", // default light theme
 
     actions: {
       switchTheme: () =>
         set((state) => {
-          state.theme = state.theme === "fantasy" ? "dim" : "fantasy";
+          state.theme = state.theme === "corporate" ? "dim" : "corporate";
         }),
     },
   }))
