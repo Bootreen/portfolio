@@ -1,14 +1,23 @@
+import { THEMES, LANGUAGES } from "./constants";
 import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
 
+const { LIGHT, DARK } = THEMES;
+const { EN } = LANGUAGES;
+
 export const usePortfolioStore = create(
   immer((set) => ({
-    theme: "corporate", // default light theme
+    activeTheme: LIGHT,
+    activeLanguage: EN,
 
     actions: {
       switchTheme: () =>
         set((state) => {
-          state.theme = state.theme === "corporate" ? "dim" : "corporate";
+          state.activeTheme = state.activeTheme === LIGHT ? DARK : LIGHT;
+        }),
+      switchLanguage: (language) =>
+        set((state) => {
+          state.activeLanguage = language;
         }),
     },
   }))

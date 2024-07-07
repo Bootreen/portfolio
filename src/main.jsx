@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./routes/root/root.route.jsx";
 import About from "./routes/about/about.route.jsx";
 import Portfolio from "./routes/portfolio/portfolio.route.jsx";
-import Career from "./routes/career/career.route.jsx";
+import CurriculumVitae from "./routes/cv/cv.route.jsx";
 import Contact from "./routes/contact/contact.route.jsx";
 
 const router = createBrowserRouter([
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         element: <Portfolio />,
       },
       {
-        path: "/career",
-        element: <Career />,
+        path: "/cv",
+        element: <CurriculumVitae />,
       },
       {
         path: "/contact",
