@@ -11,11 +11,7 @@ const Footer = () => (
   <footer className={footerContainer}>
     <aside className={footerContent}>
       <img src='/boot.svg' className={logo}></img>
-      <p className={copyright}>
-        Copyright © {new Date().getFullYear()}
-        <br />
-        Oleksii Butrin
-      </p>
+      <p className={copyright}>© {new Date().getFullYear()}, Oleksii Butrin</p>
       <a href='https://github.com/bootreen'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -31,9 +27,7 @@ const Footer = () => (
         </svg>
       </a>
       <a className={textLink} href='https://github.com/bootreen'>
-        My profile
-        <br />
-        on Github
+        I’m on Github
       </a>
     </aside>
   </footer>
