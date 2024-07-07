@@ -4,20 +4,19 @@ import {
   logo,
   copyright,
   githubLogo,
-  logoLink,
   textLink,
 } from "./footer.style";
 
 const Footer = () => (
   <footer className={footerContainer}>
     <aside className={footerContent}>
-      <object data='/boot.svg' className={logo}></object>
+      <img src='/boot.svg' className={logo}></img>
       <p className={copyright}>
         Copyright © {new Date().getFullYear()}
         <br />
         Oleksii Butrin
       </p>
-      <a className={logoLink} href='https://github.com/bootreen'>
+      <a href='https://github.com/bootreen'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 97.6272 96.0004'

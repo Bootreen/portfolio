@@ -15,9 +15,9 @@ const Header = () => {
     <header className={headerContainer}>
       <div className={navBarContainer}>
         <div className={navBarStart}></div>
-        <MenuItem path='/' caption='Home' />
-        <MenuItem path='/about' caption='About' />
-        <MenuItem path='/projects' caption='Projects' />
+        <MenuItem path='/' caption='About' />
+        <MenuItem path='/portfolio' caption='Portfolio' />
+        <MenuItem path='/career' caption='Career' />
         <MenuItem path='/contact' caption='Contact' />
         <div className={navBarEnd}>
           <label className={themeSwitcher}>
