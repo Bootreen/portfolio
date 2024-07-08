@@ -4,5 +4,5 @@ export const styleFooterContent = "grid-flow-col items-center";
 export const styleLogo = "w-7 h-7 md:w-10 md:h-10 lg:w-12 md:h-12";
 export const styleCopyright = "px-3 font-bold";
 export const styleGithubLogo =
-  "fill-current w-6 h-6 md:w-9 md:h-9 lg:w-11 md:h-11";
+  "fill-current w-7 h-7 md:w-10 md:h-10 lg:w-12 md:h-12";
 export const styleTextLink = "pl-2 font-bold";

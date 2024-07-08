@@ -22,7 +22,7 @@ const Footer = () => {
         <a href='https://github.com/bootreen'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            viewBox='0 0 97.6272 96.0004'
+            viewBox='0 0 106.5 105'
             className={styleGithubLogo}
           >
             <path
