@@ -2889,6 +2889,10 @@ details.collapse summary::-webkit-details-marker {
   width: 1.75rem;
 }
 
+.w-\[38rem\] {
+  width: 38rem;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -2896,14 +2900,6 @@ details.collapse summary::-webkit-details-marker {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-\[38rem\] {
-  width: 38rem;
 }
 
 .min-w-full {
@@ -3032,11 +3028,6 @@ details.collapse summary::-webkit-details-marker {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .py-0 {
@@ -3410,10 +3401,6 @@ details.collapse summary::-webkit-details-marker {
   .lg\:prose-xl :where(.lg\:prose-xl > :last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
     margin-bottom: 0;
   }
-}
-
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
 }
 
 .hover\:text-secondary:hover {

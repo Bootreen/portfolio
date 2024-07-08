@@ -8,7 +8,7 @@ export const styleProjectCardInfoContainer =
 export const styleProjectCardTitle =
   "pl-5 pb-2 text-2xl text-secondary font-bold";
 export const styleProjectCardFeatures = "pl-5 list-disc text-base";
-export const styleProjectCardDetails = "collapse-content prose m-auto px-8";
+export const styleProjectCardDetails = "collapse-content prose m-auto px-2";
 export const styleProjectCardButtonsContainer =
   "flex flex-row justify-end gap-4";
 export const styleNavButton = "btn btn-accent rounded-md";

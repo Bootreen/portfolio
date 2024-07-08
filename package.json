@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
+    "tailwind": "npx tailwindcss -i ./src/css/input.css -o ./src/css/styles.css --watch",
+    "dev": "concurrently --kill-others \"npm run tailwind\" \"npm run start\"",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
