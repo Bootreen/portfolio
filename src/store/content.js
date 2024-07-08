@@ -79,8 +79,169 @@ export const content = {
           },
         ],
       },
+      {
+        title: "CSS Methdologies",
+        thumbnail: "/css-meth.jpg",
+        features: [
+          "Complex state logic",
+          "Database browser component",
+          "Code syntax highlighting",
+          "Dynamic styles' switching",
+        ],
+        description: [
+          "This project showcases various CSS methodologies, developed using the Next.js framework and the highlight.js library. It includes a sophisticated interactive web component — a database viewer featuring tabs, a list, quick search, and an advanced filter in a separate modal window. For the description, a custom lightweight markup language, similar to Markdown, is employed to denote sections and code snippets. A simple parser is implemented to process these descriptions and render them as React components.",
+        ],
+        buttons: [
+          { caption: "Open project", url: "https://css-meth.vercel.app/" },
+          {
+            caption: "Repository",
+            url: "https://github.com/Bootreen/css-meth",
+          },
+        ],
+      },
+      {
+        title: "Calculator",
+        thumbnail: "/calculator.jpg",
+        features: [
+          "Supports operations chaining",
+          "Conventional order of operations",
+          "Keyboard numpad can be used",
+          "Supports decimals and negatives",
+        ],
+        description: [
+          "This is a calculator built using React and React Hooks. Despite its compact code size, it offers numerous features: it displays the operation history in a separate indicator, supports working with decimals and negative numbers, and adheres to the conventional order of mathematical operations. As I developed it at the beginning of my journey into frontend development, it performs calculations using the eval() function. If I were to write it now, I would implement custom parsing and computation handling.",
+        ],
+        buttons: [
+          {
+            caption: "View on Codepen.io",
+            url: "https://codepen.io/bootreen/pen/PoageKZ",
+          },
+        ],
+      },
     ],
-    DE: [{}],
-    UA: [{}],
+    DE: [
+      {
+        title: "Frontend-Quiz-App",
+        thumbnail: "/quiz.jpg",
+        features: [
+          "Mobilfreundliches Design",
+          "Antwortoptionen mischen",
+          "Hervorhebung der Antworten",
+          "Anschauliche Nachbesprechung",
+        ],
+        description: [
+          "Bei diesem Projekt habe ich nicht nur als Entwickler, sondern auch als Teamleiter mitgewirkt. Ich habe die Projektstruktur, die Logik der Anwendung und die Auswahl der verwendeten Tools entworfen. Jeden Tag habe ich Aufgaben an andere Teammitglieder verteilt, den Fortschritt überwacht und bei Bedarf Kollegen unterstützt.",
+          "Die Idee, lustige GIFs zu verwenden, und deren Umsetzung war ebenfalls meine Verantwortung.",
+        ],
+        buttons: [
+          { caption: "Projekt öffnen", url: "https://roh-quiz.vercel.app/" },
+          {
+            caption: "Repository",
+            url: "https://github.com/Bootreen/roh-quiz",
+          },
+        ],
+      },
+      {
+        title: "CSS-Methodologien",
+        thumbnail: "/css-meth.jpg",
+        features: [
+          "Komplexe Zustandslogik",
+          "Datenbank-Browser-Komponente",
+          "Syntax-Hervorhebung",
+          "Dynamischer Stilwechsel",
+        ],
+        description: [
+          "Dieses Projekt zeigt verschiedene CSS-Methodologien, entwickelt mit dem Next.js-Framework und der highlight.js-Bibliothek. Es enthält eine anspruchsvolle interaktive Web-Komponente — einen Datenbank-Betrachter mit Registerkarten, einer Liste, einer schnellen Suche und einem erweiterten Filter in einem separaten Modalfenster. Für die Beschreibung wird eine benutzerdefinierte, leichtgewichtige Auszeichnungssprache ähnlich Markdown verwendet, um Abschnitte und Code-Snippets zu kennzeichnen. Ein einfacher Parser wurde implementiert, um diese Beschreibungen zu verarbeiten und als React-Komponenten darzustellen.",
+        ],
+        buttons: [
+          { caption: "Projekt öffnen", url: "https://css-meth.vercel.app/" },
+          {
+            caption: "Repository",
+            url: "https://github.com/Bootreen/css-meth",
+          },
+        ],
+      },
+      {
+        title: "Taschenrechner",
+        thumbnail: "/calculator.jpg",
+        features: [
+          "Verkettung von Operationen",
+          "Reihenfolge der Operationen",
+          "Tastaturnummernblock nutzbar",
+          "Dezimal- und negative Zahlen",
+        ],
+        description: [
+          "Dies ist ein Taschenrechner, der mit React und React Hooks entwickelt wurde. Trotz seiner kompakten Codegröße bietet er zahlreiche Funktionen: Er zeigt den Verlauf der Operationen in einem separaten Indikator an, unterstützt die Arbeit mit Brüchen und negativen Zahlen und hält sich an die konventionelle Reihenfolge der mathematischen Operationen. Da ich ihn zu Beginn meines Frontend-Studiums geschrieben habe, führt er Berechnungen mit der eval()-Funktion durch. Wenn ich ihn jetzt schreiben würde, würde ich eine benutzerdefinierte Parser- und Berechnungslogik implementieren.",
+        ],
+        buttons: [
+          {
+            caption: "Auf Codepen.io anzeigen",
+            url: "https://codepen.io/bootreen/pen/PoageKZ",
+          },
+        ],
+      },
+    ],
+    UA: [
+      {
+        title: "Frontend Quiz App",
+        thumbnail: "/quiz.jpg",
+        features: [
+          "Мобільний дизайн",
+          "Перемішування варіантів відповідей",
+          "Підсвічування відповідей",
+          "Класний розбір результатів",
+        ],
+        description: [
+          "У цьому проекті я брав участь не тільки як розробник, але й як тімлід. Я розробив структуру проекту, логіку роботи додатку та обрав інструменти, які ми використовували. Щодня я розподіляв завдання серед інших членів команди, контролював хід роботи та допомагав колегам у разі необхідності.",
+          "Ідея використання смішних GIF та їх реалізація також були моєю відповідальністю.",
+        ],
+        buttons: [
+          { caption: "Відкрити проект", url: "https://roh-quiz.vercel.app/" },
+          {
+            caption: "Репозиторій",
+            url: "https://github.com/Bootreen/roh-quiz",
+          },
+        ],
+      },
+      {
+        title: "Методології CSS",
+        thumbnail: "/css-meth.jpg",
+        features: [
+          "Складна логіка стану",
+          "Компонент перегляду бази даних",
+          "Підсвічування синтаксису коду",
+          "Динамічна зміна стилів",
+        ],
+        description: [
+          "Цей проект демонструє різні методології CSS, розроблені за допомогою фреймворку Next.js і бібліотеки highlight.js. Він включає складний інтерактивний веб-компонент — переглядач бази даних із вкладками, списком, швидким пошуком та розширеним фільтром у окремому модальному вікні. Для опису використовується спеціальна легка мова розмітки, схожа на Markdown, щоб позначати розділи та вставки коду. Було реалізовано простий парсер для обробки цих описів і рендерингу їх у компоненти React.",
+        ],
+        buttons: [
+          { caption: "Відкрити проект", url: "https://css-meth.vercel.app/" },
+          {
+            caption: "Репозиторій",
+            url: "https://github.com/Bootreen/css-meth",
+          },
+        ],
+      },
+      {
+        title: "Калькулятор",
+        thumbnail: "/calculator.jpg",
+        features: [
+          "Підтримує ланцюжок операцій",
+          "Звичайний порядок операцій",
+          "Можна використовувати клавіатуру",
+          "Десяткові та від’ємні числа",
+        ],
+        description: [
+          "Це калькулятор, створений за допомогою React і React Hooks. Незважаючи на компактний розмір коду, він пропонує безліч функцій: він показує історію операцій в окремому індикаторі, підтримує роботу з дробами та від’ємними числами і дотримується звичайного порядку математичних операцій. Оскільки я розробив його на початку свого вивчення Frontend, він виконує обчислення за допомогою функції eval(). Якби я писав це зараз, я б реалізував власний парсинг і обробку обчислень.",
+        ],
+        buttons: [
+          {
+            caption: "Подивитися на Codepen.io",
+            url: "https://codepen.io/bootreen/pen/PoageKZ",
+          },
+        ],
+      },
+    ],
   },
 };

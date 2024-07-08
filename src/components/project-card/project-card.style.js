@@ -1,5 +1,5 @@
 export const styleProjectCardContainer =
-  "h-fit collapse collapse-arrow bg-base-100 mb-4 rounded-lg";
+  "h-fit w-[38rem] collapse collapse-arrow bg-base-100 mb-4 rounded-lg";
 export const styleProjectCardPreview =
   "collapse-title text-xl font-medium flex flex-row justify-start";
 export const styleProjectCardThumbnail = "w-48 h-32 rounded-md m-4";
