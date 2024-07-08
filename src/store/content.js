@@ -1,5 +1,8 @@
 export const content = {
   menuItems: {
+    // for some yet unknown reason isActive attribute from NavLink
+    // doesn't work properly when rendering menu items from array
+    // so, for now I render each of them separately
     about: { EN: "About", DE: "Über mich", UA: "Про мене" },
     portfolio: { EN: "Portfolio", DE: "Portfolio", UA: "Портфоліо" },
     cv: { EN: "CV", DE: "CV", UA: "CV" },
@@ -52,5 +55,32 @@ export const content = {
         "Давайте співпрацювати, щоб створити щось значуще та впливове!",
       ],
     },
+  },
+  projects: {
+    EN: [
+      {
+        title: "Frontend Quiz App",
+        thumbnail: "/quiz.jpg",
+        features: [
+          "Mobile-ready design",
+          "Answer options shuffling",
+          "Answers' highlighting",
+          "Fancy debrief",
+        ],
+        description: [
+          "In this project, I participated not only as a developer but also as a team lead. I designed the project structure, the application logic, and selected the tools we used. Every day, I assigned tasks to other team members, monitored the progress, and assisted colleagues when necessary.",
+          "The idea of using funny GIFs and its implementation was also my responsibility.",
+        ],
+        buttons: [
+          { caption: "Open project", url: "https://roh-quiz.vercel.app/" },
+          {
+            caption: "Repository",
+            url: "https://github.com/Bootreen/roh-quiz",
+          },
+        ],
+      },
+    ],
+    DE: [{}],
+    UA: [{}],
   },
 };
