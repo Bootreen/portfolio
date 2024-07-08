@@ -1,5 +1,5 @@
 export const footerContainer =
-  "footer footer-center bg-base-content text-base-100 items-center text-xs fixed bottom-0 h-fit px-4 py-2 md:text-sm md:py-2 lg:py-2.5";
+  "footer footer-center h-fit fixed bottom-0 px-4 py-2 md:py-2 lg:py-2.5 bg-base-content text-base-100 text-xs md:text-sm items-center";
 export const footerContent = "grid-flow-col items-center";
 export const logo = "w-7 h-7 md:w-10 md:h-10 lg:w-12 md:h-12";
 export const copyright = "px-3 font-bold";
