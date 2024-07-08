@@ -5,9 +5,12 @@ import { immer } from "zustand/middleware/immer";
 const { LIGHT, DARK } = THEMES;
 const { EN } = LANGUAGES;
 
+const isPrefersDarkTheme = () =>
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+
 export const usePortfolioStore = create(
   immer((set) => ({
-    activeTheme: LIGHT,
+    activeTheme: isPrefersDarkTheme() ? DARK : LIGHT,
     activeLanguage: EN,
 
     actions: {

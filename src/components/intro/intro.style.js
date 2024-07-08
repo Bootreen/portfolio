@@ -1,5 +1,5 @@
 export const styleDescriptionContainer =
-  "hero min-h-screen py-12 bg-base-200 md:pb-36";
+  "hero min-h-screen py-12 bg-base-300 md:pb-36";
 export const styleDescriptionContent = "hero-content flex-col lg:flex-row";
 export const styleDescriptionHeading =
   "pb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center lg:text-left font-bold";
