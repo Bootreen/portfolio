@@ -1,5 +1,6 @@
 // import React from 'react'
 import "./css/styles.css";
+import { PATHS } from "./store/paths.js";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./routes/root/root.route.jsx";
@@ -8,9 +9,11 @@ import Portfolio from "./routes/portfolio/portfolio.route.jsx";
 import CurriculumVitae from "./routes/cv/cv.route.jsx";
 import Contact from "./routes/contact/contact.route.jsx";
 
+const { HOME, PORTFOLIO, CV, CONTACT } = PATHS;
+
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: HOME,
     element: <RootLayout />,
     children: [
       {
@@ -18,15 +21,15 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/portfolio",
+        path: PORTFOLIO,
         element: <Portfolio />,
       },
       {
-        path: "/cv",
+        path: CV,
         element: <CurriculumVitae />,
       },
       {
-        path: "/contact",
+        path: CONTACT,
         element: <Contact />,
       },
     ],

@@ -8,6 +8,7 @@ import {
   styleLanguageOption,
 } from "./header.style";
 import { content } from "../../store/content";
+import { PATHS } from "../../store/paths";
 import { LANGUAGES } from "../../store/constants";
 import { usePortfolioStore, usePortfolioActions } from "../../store/store";
 import { Day, Night } from "../theme-icons/theme-icons.component";
@@ -16,6 +17,7 @@ import MenuItem from "../menu-item/menu-item.component";
 const Header = () => {
   const { switchTheme, switchLanguage } = usePortfolioActions();
   const locale = usePortfolioStore(({ activeLanguage }) => activeLanguage);
+  const { HOME, PORTFOLIO, CV, CONTACT } = PATHS;
   const {
     menuItems: { about, portfolio, cv, contact },
   } = content;
@@ -29,10 +31,10 @@ const Header = () => {
             <Night />
           </label>
         </div>
-        <MenuItem path='/' caption={about[locale]} />
-        <MenuItem path='/portfolio' caption={portfolio[locale]} />
-        <MenuItem path='/cv' caption={cv[locale]} />
-        <MenuItem path='/contact' caption={contact[locale]} />
+        <MenuItem path={HOME} caption={about[locale]} />
+        <MenuItem path={PORTFOLIO} caption={portfolio[locale]} />
+        <MenuItem path={CV} caption={cv[locale]} />
+        <MenuItem path={CONTACT} caption={contact[locale]} />
         <div className={styleNavBarEnd}>
           <select
             className={styleLanguageSelector}
