@@ -1,8 +1,8 @@
-import { projectsContainer } from "./portfolio.style";
+import { styleProjectsContainer } from "./portfolio.style";
 
 const Portfolio = () => {
   return (
-    <article className={projectsContainer}>
+    <article className={styleProjectsContainer}>
       <h3>Projects</h3>
     </article>
   );
