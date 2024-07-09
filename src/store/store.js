@@ -5,10 +5,19 @@ import { immer } from "zustand/middleware/immer";
 const { LIGHT, DARK } = THEMES;
 const { EN } = LANGUAGES;
 
+const isPrefersDarkTheme = () =>
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+const { innerWidth: initialWindowWidth, innerHeight: initialWindowHeight } =
+  window;
+
 export const usePortfolioStore = create(
   immer((set) => ({
-    activeTheme: LIGHT,
+    activeTheme: isPrefersDarkTheme() ? DARK : LIGHT,
     activeLanguage: EN,
+    windowDimentions: {
+      width: initialWindowWidth,
+      height: initialWindowHeight,
+    },
 
     actions: {
       switchTheme: () =>
@@ -19,6 +28,12 @@ export const usePortfolioStore = create(
         set((state) => {
           state.activeLanguage = language;
         }),
+      updateWindowDimentions: () => {
+        const { innerWidth: width, innerHeight: height } = window;
+        set((state) => {
+          state.windowDimentions = { width, height };
+        });
+      },
     },
   }))
 );

@@ -1,2 +1,6 @@
-export const projectsContainer =
-  "min-h-screen min-w-full mx-auto px-4 py-14 md:py-16 lg:py-20 bg-base-200 prose prose-slate lg:prose-xl prose-headings:text-center";
+export const styleProjectsContainer =
+  "min-h-full w-fit m-auto py-16 sm:py-20 grid grid-cols-1 gap-x-4 sm:gap-x-6";
+export const styleProjectsContainerLarge = "xl:grid-cols-2";
+export const styleProjectsContainerHuge = "min-[1920px]:grid-cols-3";
+export const styleProjectsColumn =
+  "grid grid-cols-1 gap-y-4 sm:gap-y-6 content-start";

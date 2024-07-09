@@ -1,8 +1,8 @@
-import { cvContainer } from "./cv.style";
+import { styleCvContainer } from "./cv.style";
 
 const CurriculumVitae = () => {
   return (
-    <article className={cvContainer}>
+    <article className={styleCvContainer}>
       <h3>CV</h3>
     </article>
   );

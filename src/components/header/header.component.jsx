@@ -1,13 +1,14 @@
 import {
-  headerContainer,
-  navBarContainer,
-  navBarStart,
-  navBarEnd,
-  themeSwitcher,
-  languageSelector,
-  languageOption,
+  styleHeaderContainer,
+  styleNavBarContainer,
+  styleNavBarStart,
+  styleNavBarEnd,
+  styleThemeSwitcher,
+  styleLanguageSelector,
+  styleLanguageOption,
 } from "./header.style";
 import { content } from "../../store/content";
+import { PATHS } from "../../store/paths";
 import { LANGUAGES } from "../../store/constants";
 import { usePortfolioStore, usePortfolioActions } from "../../store/store";
 import { Day, Night } from "../theme-icons/theme-icons.component";
@@ -16,33 +17,34 @@ import MenuItem from "../menu-item/menu-item.component";
 const Header = () => {
   const { switchTheme, switchLanguage } = usePortfolioActions();
   const locale = usePortfolioStore(({ activeLanguage }) => activeLanguage);
+  const { HOME, PORTFOLIO, CV, CONTACT } = PATHS;
   const {
     menuItems: { about, portfolio, cv, contact },
   } = content;
   return (
-    <header className={headerContainer}>
-      <div className={navBarContainer}>
-        <div className={navBarStart}>
-          <label className={themeSwitcher}>
+    <header className={styleHeaderContainer}>
+      <div className={styleNavBarContainer}>
+        <div className={styleNavBarStart}>
+          <label className={styleThemeSwitcher}>
             <input type='checkbox' onChange={() => switchTheme()} />
             <Day />
             <Night />
           </label>
         </div>
-        <MenuItem path='/' caption={about[locale]} />
-        <MenuItem path='/portfolio' caption={portfolio[locale]} />
-        <MenuItem path='/cv' caption={cv[locale]} />
-        <MenuItem path='/contact' caption={contact[locale]} />
-        <div className={navBarEnd}>
+        <MenuItem path={HOME} caption={about[locale]} />
+        <MenuItem path={PORTFOLIO} caption={portfolio[locale]} />
+        <MenuItem path={CV} caption={cv[locale]} />
+        <MenuItem path={CONTACT} caption={contact[locale]} />
+        <div className={styleNavBarEnd}>
           <select
-            className={languageSelector}
+            className={styleLanguageSelector}
             value={locale}
             onChange={(event) => switchLanguage(event.target.value)}
           >
             {Object.entries(LANGUAGES).map(([id, language]) => (
               <option
                 key={id}
-                className={languageOption}
+                className={styleLanguageOption}
                 disabled={language === locale}
                 value={language}
               >
