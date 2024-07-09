@@ -604,7 +604,7 @@ export const content = {
         ],
       },
       {
-        title: "Переглядач бази користувачів",
+        title: "Переглядач User DB",
         thumbnail: "/table.jpg",
         features: [
           "Сортування стовпців",
@@ -628,7 +628,7 @@ export const content = {
         ],
       },
       {
-        title: "Макет магазину лептопів",
+        title: "Макет магазину",
         thumbnail: "/wbl.jpg",
         features: [
           "CSS-хак для галереї",
