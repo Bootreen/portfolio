@@ -30,11 +30,13 @@ const Portfolio = () => {
         <div key={columnIndex} className={styleProjectsColumn}>
           {projects[locale].map(
             ({ title, thumbnail, features, description, buttons }, index) => {
-              // dynamically distribute project cards into the separate columns
+              // dynamically distribute project cards to the separate columns
               // but with row order like this:
-              // 0  1  2
-              // 3  4  5
-              // 6  7  8
+              // columns:   1       2         3
+              //          ----- -------- -----------
+              // element  | 0 | | 0  1 | | 0  1  2 |
+              // indices  | 1 | | 2  3 | | 3  4  5 |
+              //          | 2 | | 4  5 | | 6  7  8 |
               // ...
               if (index % columns.length === columnIndex)
                 return (
