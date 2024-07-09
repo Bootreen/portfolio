@@ -11,7 +11,7 @@ export const styleProjectCardTitle =
   "pl-5 pb-2 text-2xl text-center sm:text-left text-secondary font-bold";
 export const styleProjectCardFeatures = "pl-5 list-disc text-base ";
 export const styleProjectCardDetails =
-  "collapse-content prose prose-p:text-sm sm:prose-p:text-base m-auto px-6 sm:px-2";
+  "collapse-content mx-auto px-6 sm:px-2 prose prose-p:mt-0 prose-p:text-sm sm:prose-p:text-base";
 export const styleProjectCardButtonsContainer =
   "flex flex-row justify-center sm:justify-end gap-4";
 export const styleNavButton = "btn btn-accent rounded-md";

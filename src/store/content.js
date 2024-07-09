@@ -103,7 +103,7 @@ export const content = {
         title: "Calculator",
         image: "/calculator.jpg",
         features: [
-          "Supports operations chaining",
+          "Supports operation chaining",
           "Conventional order of operations",
           "Keyboard numpad can be used",
           "Supports decimals and negatives",
