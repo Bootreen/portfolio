@@ -4,7 +4,7 @@ export const content = {
     // doesn't work properly when rendering menu items from array
     // so, for now I render each of them separately
     about: { EN: "About", DE: "Über mich", UA: "Про мене" },
-    portfolio: { EN: "Portfolio", DE: "Portfolio", UA: "Портфоліо" },
+    portfolio: { EN: "Portfolio", DE: "Portfolio", UA: "Роботи" },
     cv: { EN: "CV", DE: "CV", UA: "CV" },
     contact: { EN: "Contact", DE: "Kontakt", UA: "Контакти" },
   },
@@ -187,7 +187,7 @@ export const content = {
         thumbnail: "/quiz.jpg",
         features: [
           "Мобільний дизайн",
-          "Перемішування варіантів відповідей",
+          "Рандомний порядок відповідей",
           "Підсвічування відповідей",
           "Класний розбір результатів",
         ],
@@ -229,7 +229,7 @@ export const content = {
         features: [
           "Підтримує ланцюжок операцій",
           "Звичайний порядок операцій",
-          "Можна використовувати клавіатуру",
+          "Можна використовувати numpad",
           "Десяткові та від’ємні числа",
         ],
         description: [

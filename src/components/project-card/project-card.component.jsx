@@ -2,6 +2,7 @@ import {
   styleProjectCardContainer,
   styleProjectCardPreview,
   styleProjectCardThumbnail,
+  styleProjectCardImage,
   styleProjectCardInfoContainer,
   styleProjectCardTitle,
   styleProjectCardFeatures,
@@ -32,6 +33,7 @@ const ProjectCard = ({
       </div>
     </div>
     <div className={styleProjectCardDetails}>
+      <img className={styleProjectCardImage} src={thumbnail} />
       {description.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
