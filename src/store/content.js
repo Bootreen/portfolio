@@ -15,7 +15,7 @@ export const content = {
       UA: `© ${new Date().getFullYear()}, Олексій Бутрін`,
     },
     github: {
-      EN: "I'm on Hithub",
+      EN: "I'm on Github",
       DE: "Ich bin auf Github",
       UA: "Я на Github",
     },
