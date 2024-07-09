@@ -12,6 +12,7 @@ export const usePortfolioStore = create(
   immer((set) => ({
     activeTheme: isPrefersDarkTheme() ? DARK : LIGHT,
     activeLanguage: EN,
+    windowDimentions: { width: window.innerWidth, height: window.innerHeight },
 
     actions: {
       switchTheme: () =>
@@ -22,6 +23,12 @@ export const usePortfolioStore = create(
         set((state) => {
           state.activeLanguage = language;
         }),
+      updateWindowDimentions: () => {
+        const { innerWidth: width, innerHeight: height } = window;
+        set((state) => {
+          state.windowDimentions = { width, height };
+        });
+      },
     },
   }))
 );

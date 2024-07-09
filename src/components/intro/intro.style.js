@@ -3,7 +3,8 @@ export const styleDescriptionContainer =
 export const styleDescriptionContent = "hero-content flex-col lg:flex-row";
 export const styleDescriptionHeading =
   "pb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center lg:text-left font-bold";
-export const styleDescriptionParagraph = "py-3 text-base md:text-lg lg:text-xl";
+export const styleDescriptionParagraph =
+  "px-4 lg:px-0 py-1.5 sm:py-3 text-sm sm:text-base md:text-lg lg:text-xl";
 export const stylePhotoSquare =
   "max-w-xs rounded-lg shadow-2xl md:max-w-sm lg:hidden";
 export const stylePhotoVertical =
