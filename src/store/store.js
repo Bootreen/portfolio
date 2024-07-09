@@ -7,12 +7,17 @@ const { EN } = LANGUAGES;
 
 const isPrefersDarkTheme = () =>
   window.matchMedia("(prefers-color-scheme: dark)").matches;
+const { innerWidth: initialWindowWidth, innerHeight: initialWindowHeight } =
+  window;
 
 export const usePortfolioStore = create(
   immer((set) => ({
     activeTheme: isPrefersDarkTheme() ? DARK : LIGHT,
     activeLanguage: EN,
-    windowDimentions: { width: window.innerWidth, height: window.innerHeight },
+    windowDimentions: {
+      width: initialWindowWidth,
+      height: initialWindowHeight,
+    },
 
     actions: {
       switchTheme: () =>
