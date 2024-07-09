@@ -29,7 +29,7 @@ const Portfolio = () => {
       {columns.map((_, columnIndex) => (
         <div key={columnIndex} className={styleProjectsColumn}>
           {projects[locale].map(
-            ({ title, thumbnail, features, description, buttons }, index) => {
+            ({ title, image, features, description, buttons }, index) => {
               // dynamically distribute project cards to the separate columns
               // but with row order like this:
               // columns:   1       2         3
@@ -43,7 +43,7 @@ const Portfolio = () => {
                   <ProjectCard
                     key={index}
                     title={title}
-                    thumbnail={thumbnail}
+                    image={image}
                     features={features}
                     description={description}
                     buttons={buttons}

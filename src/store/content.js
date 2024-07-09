@@ -60,7 +60,7 @@ export const content = {
     EN: [
       {
         title: "Frontend Quiz App",
-        thumbnail: "/quiz.jpg",
+        image: "/quiz.jpg",
         features: [
           "Mobile-ready design",
           "Answer options shuffling",
@@ -81,7 +81,7 @@ export const content = {
       },
       {
         title: "CSS Methdologies",
-        thumbnail: "/css-meth.jpg",
+        image: "/css-meth.jpg",
         features: [
           "Complex state logic",
           "Database browser component",
@@ -101,7 +101,7 @@ export const content = {
       },
       {
         title: "Calculator",
-        thumbnail: "/calculator.jpg",
+        image: "/calculator.jpg",
         features: [
           "Supports operations chaining",
           "Conventional order of operations",
@@ -120,7 +120,7 @@ export const content = {
       },
       {
         title: "Drum Machine",
-        thumbnail: "/drum-machine.jpg",
+        image: "/drum-machine.jpg",
         features: [
           "Custom Knob component",
           "4 sound banks",
@@ -139,7 +139,7 @@ export const content = {
       },
       {
         title: "Markdown Previewer",
-        thumbnail: "/markdown.jpg",
+        image: "/markdown.jpg",
         features: [
           "Wise tool choice",
           "Realtime edit/view",
@@ -158,7 +158,7 @@ export const content = {
       },
       {
         title: "ToDo Reminder",
-        thumbnail: "/reminder.jpg",
+        image: "/reminder.jpg",
         features: [
           "Slick minimalistic design",
           "Easy to use",
@@ -181,7 +181,7 @@ export const content = {
       },
       {
         title: "User DB Viewer",
-        thumbnail: "/table.jpg",
+        image: "/table.jpg",
         features: [
           "Column sorting",
           "Adjustable filters",
@@ -205,7 +205,7 @@ export const content = {
       },
       {
         title: "Laptop Store Mockup",
-        thumbnail: "/wbl.jpg",
+        image: "/wbl.jpg",
         features: [
           "CSS gallery hack",
           "Keyboard support",
@@ -229,7 +229,7 @@ export const content = {
       },
       {
         title: "Tribute Page",
-        thumbnail: "/tribute.jpg",
+        image: "/tribute.jpg",
         features: [
           "Nice CSS from scratch",
           "Multicolumn layout",
@@ -249,7 +249,7 @@ export const content = {
       },
       {
         title: "Portfolio",
-        thumbnail: "/portfolio.jpg",
+        image: "/portfolio.jpg",
         features: [
           "TailwindCSS + DaisyUI",
           "Adaptive layout",
@@ -272,7 +272,7 @@ export const content = {
     DE: [
       {
         title: "Frontend-Quiz-App",
-        thumbnail: "/quiz.jpg",
+        image: "/quiz.jpg",
         features: [
           "Mobilfreundliches Design",
           "Antwortoptionen mischen",
@@ -293,7 +293,7 @@ export const content = {
       },
       {
         title: "CSS-Methodologien",
-        thumbnail: "/css-meth.jpg",
+        image: "/css-meth.jpg",
         features: [
           "Komplexe Zustandslogik",
           "Datenbank-Browser-Komponente",
@@ -313,7 +313,7 @@ export const content = {
       },
       {
         title: "Taschenrechner",
-        thumbnail: "/calculator.jpg",
+        image: "/calculator.jpg",
         features: [
           "Verkettung von Operationen",
           "Reihenfolge der Operationen",
@@ -332,7 +332,7 @@ export const content = {
       },
       {
         title: "Drum-Maschine",
-        thumbnail: "/drum-machine.jpg",
+        image: "/drum-machine.jpg",
         features: [
           "Benutzerdefinierter Knopf",
           "4 Soundbänke",
@@ -351,7 +351,7 @@ export const content = {
       },
       {
         title: "Markdown-Vorschau",
-        thumbnail: "/markdown.jpg",
+        image: "/markdown.jpg",
         features: [
           "Kluger Tool-Choice",
           "Echtzeit Bearbeitung/Ansicht",
@@ -370,7 +370,7 @@ export const content = {
       },
       {
         title: "ToDo-Erinnerung",
-        thumbnail: "/reminder.jpg",
+        image: "/reminder.jpg",
         features: [
           "Minimalistisches Design",
           "Einfach zu bedienen",
@@ -393,7 +393,7 @@ export const content = {
       },
       {
         title: "Benutzer-DB-Viewer",
-        thumbnail: "/table.jpg",
+        image: "/table.jpg",
         features: [
           "Spaltensortierung",
           "Anpassbare Filter",
@@ -417,7 +417,7 @@ export const content = {
       },
       {
         title: "Laptop-Laden-Mockup",
-        thumbnail: "/wbl.jpg",
+        image: "/wbl.jpg",
         features: [
           "CSS-Galerie-Hack",
           "Tastaturunterstützung",
@@ -441,7 +441,7 @@ export const content = {
       },
       {
         title: "Tributseite",
-        thumbnail: "/tribute.jpg",
+        image: "/tribute.jpg",
         features: [
           "Schönes CSS von Grund auf",
           "Mehrspaltiges Layout",
@@ -461,7 +461,7 @@ export const content = {
       },
       {
         title: "Portfolio",
-        thumbnail: "/portfolio.jpg",
+        image: "/portfolio.jpg",
         features: [
           "TailwindCSS + DaisyUI",
           "Adaptives Layout",
@@ -484,7 +484,7 @@ export const content = {
     UA: [
       {
         title: "Frontend Quiz App",
-        thumbnail: "/quiz.jpg",
+        image: "/quiz.jpg",
         features: [
           "Мобільний дизайн",
           "Рандомний порядок відповідей",
@@ -505,7 +505,7 @@ export const content = {
       },
       {
         title: "Методології CSS",
-        thumbnail: "/css-meth.jpg",
+        image: "/css-meth.jpg",
         features: [
           "Складна логіка стану",
           "Компонент перегляду бази даних",
@@ -525,7 +525,7 @@ export const content = {
       },
       {
         title: "Калькулятор",
-        thumbnail: "/calculator.jpg",
+        image: "/calculator.jpg",
         features: [
           "Підтримує ланцюжок операцій",
           "Звичайний порядок операцій",
@@ -544,7 +544,7 @@ export const content = {
       },
       {
         title: "Драм-машина",
-        thumbnail: "/drum-machine.jpg",
+        image: "/drum-machine.jpg",
         features: [
           "Користувальницький регулятор",
           "4 банки звуків",
@@ -563,7 +563,7 @@ export const content = {
       },
       {
         title: "Переглядач Markdown",
-        thumbnail: "/markdown.jpg",
+        image: "/markdown.jpg",
         features: [
           "Розумний вибір інструментів",
           "Редагування/перегляд",
@@ -582,7 +582,7 @@ export const content = {
       },
       {
         title: "Нагадувач ToDo",
-        thumbnail: "/reminder.jpg",
+        image: "/reminder.jpg",
         features: [
           "Мінімалістичний дизайн",
           "Простота у використанні",
@@ -605,7 +605,7 @@ export const content = {
       },
       {
         title: "Переглядач User DB",
-        thumbnail: "/table.jpg",
+        image: "/table.jpg",
         features: [
           "Сортування стовпців",
           "Регульовані фільтри",
@@ -629,7 +629,7 @@ export const content = {
       },
       {
         title: "Макет магазину",
-        thumbnail: "/wbl.jpg",
+        image: "/wbl.jpg",
         features: [
           "CSS-хак для галереї",
           "Підтримка клавіатури",
@@ -653,7 +653,7 @@ export const content = {
       },
       {
         title: "Сторінка-трибута",
-        thumbnail: "/tribute.jpg",
+        image: "/tribute.jpg",
         features: [
           "Гарний CSS з нуля",
           "Багатоколонкове розташування",
@@ -673,7 +673,7 @@ export const content = {
       },
       {
         title: "Портфоліо",
-        thumbnail: "/portfolio.jpg",
+        image: "/portfolio.jpg",
         features: [
           "TailwindCSS + DaisyUI",
           "Адаптивний макет",

@@ -13,7 +13,7 @@ import {
 
 const ProjectCard = ({
   title,
-  thumbnail,
+  image,
   features,
   description,
   buttons,
@@ -22,7 +22,7 @@ const ProjectCard = ({
   <div className={styleProjectCardContainer}>
     <input type='radio' name='projects' defaultChecked={isChecked} />
     <div className={styleProjectCardPreview}>
-      <img className={styleProjectCardThumbnail} src={thumbnail} />
+      <img className={styleProjectCardThumbnail} src={image} />
       <div className={styleProjectCardInfoContainer}>
         <h3 className={styleProjectCardTitle}>{title}</h3>
         <ul className={styleProjectCardFeatures}>
@@ -33,7 +33,7 @@ const ProjectCard = ({
       </div>
     </div>
     <div className={styleProjectCardDetails}>
-      <img className={styleProjectCardImage} src={thumbnail} />
+      <img className={styleProjectCardImage} src={image} />
       {description.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
