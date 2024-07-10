@@ -5,7 +5,7 @@ export const styleProjectCardPreview =
 export const styleProjectCardThumbnail =
   "hidden sm:block w-48 h-32 rounded-md m-4";
 export const styleProjectCardImage =
-  "sm:hidden w-full h-auto rounded-md m-auto";
+  "mb-4 sm:hidden w-full h-auto rounded-md m-auto";
 export const styleProjectCardInfoContainer = "h-full w-full p-2 flex flex-col";
 export const styleProjectCardTitle =
   "pl-5 pb-2 text-2xl text-center sm:text-left text-secondary font-bold";

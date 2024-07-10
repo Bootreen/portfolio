@@ -1,8 +1,8 @@
 import { styleSwapOn, styleSwapOff } from "./theme-icons.style";
 
-export const Day = () => (
+export const Day = ({ active }) => (
   <svg
-    className={styleSwapOn}
+    className={active ? styleSwapOn : styleSwapOff}
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 24 24'
   >
@@ -10,9 +10,9 @@ export const Day = () => (
   </svg>
 );
 
-export const Night = () => (
+export const Night = ({ active }) => (
   <svg
-    className={styleSwapOff}
+    className={active ? styleSwapOn : styleSwapOff}
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 24 24'
   >

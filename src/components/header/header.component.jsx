@@ -9,15 +9,17 @@ import {
 } from "./header.style";
 import { content } from "../../store/content";
 import { PATHS } from "../../store/paths";
-import { LANGUAGES } from "../../store/constants";
+import { THEMES, LANGUAGES } from "../../store/constants";
 import { usePortfolioStore, usePortfolioActions } from "../../store/store";
 import { Day, Night } from "../theme-icons/theme-icons.component";
 import MenuItem from "../menu-item/menu-item.component";
 
 const Header = () => {
+  const theme = usePortfolioStore(({ activeTheme }) => activeTheme);
   const { switchTheme, switchLanguage } = usePortfolioActions();
   const locale = usePortfolioStore(({ activeLanguage }) => activeLanguage);
   const { HOME, PORTFOLIO, CV, CONTACT } = PATHS;
+  const { LIGHT, DARK } = THEMES;
   const {
     menuItems: { about, portfolio, cv, contact },
   } = content;
@@ -27,8 +29,8 @@ const Header = () => {
         <div className={styleNavBarStart}>
           <label className={styleThemeSwitcher}>
             <input type='checkbox' onChange={() => switchTheme()} />
-            <Day />
-            <Night />
+            <Day active={theme === LIGHT} />
+            <Night active={theme === DARK} />
           </label>
         </div>
         <MenuItem path={HOME} caption={about[locale]} />
