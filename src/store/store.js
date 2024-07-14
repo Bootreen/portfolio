@@ -12,6 +12,7 @@ const { innerWidth: initialWindowWidth, innerHeight: initialWindowHeight } =
 
 export const usePortfolioStore = create(
   immer((set) => ({
+    userPreferredTheme: isPrefersDarkTheme() ? DARK : LIGHT,
     activeTheme: isPrefersDarkTheme() ? DARK : LIGHT,
     activeLanguage: EN,
     windowDimentions: {

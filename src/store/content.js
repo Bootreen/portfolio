@@ -28,7 +28,7 @@ export const content = {
     },
     description: {
       EN: [
-        "My journey is passion, resilience, and continuous learning",
+        "My journey is passion, resilience, and continuous learning.",
         'I obtained a bachelor\'s degree in "Computer Systems and Networks" and have worked in the information technology industry for over 20 years. Most of my career has been spent as a columnist and editor for various IT periodicals. This experience has allowed me to stay at the forefront of technological advancements and gain a deep understanding of the IT industry from a user perspective.',
         "The onset of the war in Ukraine forced me to seek new career opportunities, and I decided to return to my IT roots as an application developer.",
         "My current technology stack includes excellent knowledge of JavaScript, HTML, and CSS, as well as frameworks like React, Next.js, and Tailwind CSS.",
@@ -259,7 +259,7 @@ export const content = {
         description: [
           "Who said a portfolio can't link to itself? 😎 In programming, recursion is quite normal.",
           "Seriously though, there are many interesting solutions here, be sure to check the repository. For example, this app detects user preferences for light and dark themes and automatically applies the right one. Manual switching is also supported. All content is localized in three languages and switches on the fly.",
-          "One of the toughest features is properly displaying an HTML accordion in a grid, where the app constantly tracks the actual viewport width and adjusts the number of columns and project card sorting accordingly (see component root.route.jsx).",
+          "One of the toughest features is properly displaying an HTML accordion in a grid, where the app constantly tracks the actual viewport width and adjusts the number of columns and project card sorting accordingly (see component portfolio.route.jsx).",
         ],
         buttons: [
           {
@@ -471,7 +471,7 @@ export const content = {
         description: [
           "Wer hat gesagt, dass ein Portfolio nicht auf sich selbst verlinken kann? 😎 In der Programmierung ist Rekursion ganz normal.",
           "Aber im Ernst, hier gibt es viele interessante Lösungen, schauen Sie unbedingt im Repository vorbei. Zum Beispiel erkennt diese App Benutzerpräferenzen für helle und dunkle Themen und wählt automatisch die richtige Anzeige aus. Manuelles Umschalten wird ebenfalls unterstützt. Alle Inhalte sind in drei Sprachen lokalisiert und wechseln im laufenden Betrieb.",
-          "Eine der schwierigsten Funktionen ist die ordnungsgemäße Anzeige eines HTML-Akkordeons im Raster, bei dem die App ständig die tatsächliche Viewport-Breite überwacht und die Anzahl der Spalten und die Sortierung der Projektkarten entsprechend anpasst (siehe Komponente root.route.jsx).",
+          "Eine der schwierigsten Funktionen ist die ordnungsgemäße Anzeige eines HTML-Akkordeons im Raster, bei dem die App ständig die tatsächliche Viewport-Breite überwacht und die Anzahl der Spalten und die Sortierung der Projektkarten entsprechend anpasst (siehe Komponente portfolio.route.jsx).",
         ],
         buttons: [
           {
@@ -683,7 +683,7 @@ export const content = {
         description: [
           "Хто сказав, що портфоліо не може посилатися на себе? 😎 У програмуванні рекурсія цілком звичайна річ.",
           "А якщо серйозно, тут реалізовано багато цікавих рішень, обов'язково зазирніть у репозиторій. Наприклад, цей додаток визначає переваги користувача для світлої і темної теми та автоматично вибирає відповідний варіант. Ручне переключення також підтримується. Весь контент локалізовано на три мови і змінюється на льоту.",
-          "Одна з найскладніших функцій — правильне відображення HTML-акордеону в сітці, де додаток постійно відстежує фактичну ширину вікна і відповідно змінює кількість стовпців і сортування карток проектів (див. компонент root.route.jsx).",
+          "Одна з найскладніших функцій — правильне відображення HTML-акордеону в сітці, де додаток постійно відстежує фактичну ширину вікна і відповідно змінює кількість стовпців і сортування карток проектів (див. компонент portfolio.route.jsx).",
         ],
         buttons: [
           {
