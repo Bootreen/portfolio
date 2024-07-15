@@ -3,7 +3,7 @@ import {
   styleProjectsContainerLarge,
   styleProjectsContainerHuge,
   styleProjectsColumn,
-} from "./projects-route.style";
+} from "./projects-page.style";
 import { content } from "../../store/content";
 import { clsx } from "clsx";
 import { useParams, useOutletContext } from "react-router-dom";
