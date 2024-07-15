@@ -20,12 +20,16 @@ const Portfolio = () => {
   const { width: windowWidth, height: windowHeight } = usePortfolioStore(
     ({ windowDimentions }) => windowDimentions
   );
-  const { WIDTH_XL, WIDTH_2XL, HEIGHT_XL, HEIGHT_2XL } = MEDIA;
+  const { WIDTH_SM, WIDTH_XL, WIDTH_2XL, HEIGHT_XL, HEIGHT_2XL } = MEDIA;
   const isLarge = windowWidth >= WIDTH_XL;
   const isHuge = windowWidth >= WIDTH_2XL;
   const maxColumns = isHuge ? 3 : isLarge ? 2 : 1;
   const maxRows =
-    windowHeight >= HEIGHT_2XL ? 3 : windowHeight >= HEIGHT_XL ? 2 : 1;
+    windowHeight >= HEIGHT_2XL && windowWidth > WIDTH_SM
+      ? 3
+      : windowHeight >= HEIGHT_XL && windowWidth > WIDTH_SM
+      ? 2
+      : 1;
   const pages = new Array(
     Math.ceil(projects[locale].length / (maxColumns * maxRows))
   ).fill(0);
