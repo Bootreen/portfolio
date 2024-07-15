@@ -6,10 +6,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./routes/root/root.route.jsx";
 import About from "./routes/about/about.route.jsx";
 import Portfolio from "./routes/portfolio/portfolio.route.jsx";
+import ProjectsPage from "./routes/projects-page/projects-route.component.jsx";
 import CurriculumVitae from "./routes/cv/cv.route.jsx";
 import Contact from "./routes/contact/contact.route.jsx";
 
-const { HOME, PORTFOLIO, CV, CONTACT } = PATHS;
+const { HOME, PORTFOLIO, PAGE_NUMBER, CV, CONTACT } = PATHS;
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,12 @@ const router = createBrowserRouter([
       {
         path: PORTFOLIO,
         element: <Portfolio />,
+        children: [
+          {
+            path: PAGE_NUMBER,
+            element: <ProjectsPage />,
+          },
+        ],
       },
       {
         path: CV,

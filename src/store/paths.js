@@ -3,4 +3,6 @@ export const PATHS = {
   PORTFOLIO: "/portfolio",
   CV: "/cv",
   CONTACT: "/contact",
+  PAGE_NUMBER: ":pageNumber",
+  PARENT: "./",
 };

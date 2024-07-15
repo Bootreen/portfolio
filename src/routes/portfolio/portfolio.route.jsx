@@ -1,59 +1,65 @@
 import {
-  styleProjectsContainer,
-  styleProjectsContainerLarge,
-  styleProjectsContainerHuge,
-  styleProjectsColumn,
+  styleProjectsPageContainer,
+  stylePortfolioPaginator,
+  stylePortfolioPageButton,
+  stylePortfolioPageButtonActive,
 } from "./portfolio.style";
-import { clsx } from "clsx";
-import ProjectCard from "../../components/project-card/project-card.component";
 import { content } from "../../store/content";
+import { clsx } from "clsx";
+import { useEffect } from "react";
+import { useParams, useNavigate, Outlet } from "react-router-dom";
 import { usePortfolioStore } from "../../store/store";
+import { PATHS } from "../../store/paths";
+import { MEDIA } from "../../store/constants";
 
 const Portfolio = () => {
+  const { pageNumber } = useParams();
+  const navigate = useNavigate();
   const { projects } = content;
   const locale = usePortfolioStore(({ activeLanguage }) => activeLanguage);
-  const { width: windowWidth } = usePortfolioStore(
+  const { width: windowWidth, height: windowHeight } = usePortfolioStore(
     ({ windowDimentions }) => windowDimentions
   );
-  const isLarge = windowWidth >= 1280;
-  const isHuge = windowWidth >= 1920;
-  const columns = new Array(isHuge ? 3 : isLarge ? 2 : 1).fill(0);
+  const { WIDTH_SM, WIDTH_XL, WIDTH_2XL, HEIGHT_XL, HEIGHT_2XL } = MEDIA;
+  const isLarge = windowWidth >= WIDTH_XL;
+  const isHuge = windowWidth >= WIDTH_2XL;
+  const maxColumns = isHuge ? 3 : isLarge ? 2 : 1;
+  const maxRows =
+    windowHeight >= HEIGHT_2XL && windowWidth > WIDTH_SM
+      ? 3
+      : windowHeight >= HEIGHT_XL && windowWidth > WIDTH_SM
+      ? 2
+      : 1;
+  const pages = new Array(
+    Math.ceil(projects[locale].length / (maxColumns * maxRows))
+  ).fill(0);
+  const { PARENT } = PATHS;
+  // set the 1st page in 2 cases:
+  // 1. On the first Portfolio route render
+  // 2. If page number is higher than calculated total pages' number
+  // (user resized viewport and now it can display more elements per page)
+  useEffect(() => {
+    if (!pageNumber || pageNumber > pages.length) navigate(PARENT + 1);
+  });
+
   return (
-    <div
-      className={clsx(
-        styleProjectsContainer, //                 default grid layout - 1 column
-        isLarge && styleProjectsContainerLarge, // windowWidth >= 1280 - 2 columns
-        isHuge && styleProjectsContainerHuge //    windowWidth >= 1920 - 3 columns
-      )}
-    >
-      {columns.map((_, columnIndex) => (
-        <div key={columnIndex} className={styleProjectsColumn}>
-          {projects[locale].map(
-            ({ title, image, features, description, buttons }, index) => {
-              // dynamically distribute project cards to the separate columns
-              // but with row order like this:
-              // columns:   1       2         3
-              //          ----- -------- -----------
-              // element  | 0 | | 0  1 | | 0  1  2 |
-              // indices  | 1 | | 2  3 | | 3  4  5 |
-              //          | 2 | | 4  5 | | 6  7  8 |
-              // ...
-              if (index % columns.length === columnIndex)
-                return (
-                  <ProjectCard
-                    key={index}
-                    title={title}
-                    image={image}
-                    features={features}
-                    description={description}
-                    buttons={buttons}
-                    isChecked={index === 0}
-                  />
-                );
-            }
-          )}
-        </div>
-      ))}
+    <div className={styleProjectsPageContainer}>
+      <div className={stylePortfolioPaginator}>
+        <h2></h2>
+        {pages.map((_, i) => (
+          <button
+            key={i}
+            className={clsx(
+              stylePortfolioPageButton,
+              pageNumber == i + 1 && stylePortfolioPageButtonActive
+            )}
+            onClick={() => navigate(PARENT + (i + 1))}
+          >
+            {i + 1}
+          </button>
+        ))}
+      </div>
+      <Outlet context={[isLarge, isHuge, maxColumns, maxRows]} />
     </div>
   );
 };
