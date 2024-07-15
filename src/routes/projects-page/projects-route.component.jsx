@@ -30,7 +30,7 @@ const ProjectsPage = () => {
             // filter projects that belong to the current page
             .filter(
               (_, i) =>
-                maxColumns * maxRows * (pageNumber - 1) - 1 < i &&
+                i > maxColumns * maxRows * (pageNumber - 1) - 1 &&
                 i <= maxColumns * maxRows * pageNumber - 1
             )
             .map(({ title, image, features, description, buttons }, index) => {
