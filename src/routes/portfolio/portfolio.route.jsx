@@ -16,7 +16,6 @@ const Portfolio = () => {
   const { pageNumber } = useParams();
   const navigate = useNavigate();
   const { projects } = content;
-  const locale = usePortfolioStore(({ activeLanguage }) => activeLanguage);
   const { width: windowWidth, height: windowHeight } = usePortfolioStore(
     ({ windowDimentions }) => windowDimentions
   );
@@ -31,7 +30,7 @@ const Portfolio = () => {
       ? 2
       : 1;
   const pages = new Array(
-    Math.ceil(projects[locale].length / (maxColumns * maxRows))
+    Math.ceil(projects.length / (maxColumns * maxRows))
   ).fill(0);
   const { PARENT } = PATHS;
   // set the 1st page in 2 cases:

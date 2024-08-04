@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./routes/root/root.route.jsx";
 import About from "./routes/about/about.route.jsx";
 import Portfolio from "./routes/portfolio/portfolio.route.jsx";
-import ProjectsPage from "./components/projects-page/projects-page.route.jsx";
+import ProjectsPage from "./routes/projects-page/projects-page.route.jsx";
 import CurriculumVitae from "./routes/cv/cv.route.jsx";
 import Contact from "./routes/contact/contact.route.jsx";
 
