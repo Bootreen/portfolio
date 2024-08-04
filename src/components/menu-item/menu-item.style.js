@@ -1,8 +1,9 @@
-export const styleNavBarCenter = "navbar-center";
-// export const menuButton = `btn btn-ghost px-2 md:px-4 md:text-xl xl:text-2xl hover:text-secondary ${({
-//   isActive,
-// }) => (isActive ? "text-primary" : undefined)}`;
-export const styleMenuButton = ({ isActive }) =>
-  isActive
-    ? "btn btn-ghost px-2 md:px-4 md:text-xl xl:text-2xl lg:hover:text-secondary underline underline-offset-4"
-    : "btn btn-ghost px-2 md:px-4 md:text-xl xl:text-2xl lg:hover:text-secondary";
+const style = {
+  navBarCenter: "navbar-center",
+  menuButton: ({ isActive }) =>
+    isActive
+      ? "btn btn-ghost px-2 md:px-4 md:text-xl xl:text-2xl lg:hover:text-secondary underline underline-offset-4"
+      : "btn btn-ghost px-2 md:px-4 md:text-xl xl:text-2xl lg:hover:text-secondary",
+};
+
+export default style;

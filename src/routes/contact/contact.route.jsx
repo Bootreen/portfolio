@@ -1,8 +1,8 @@
-import { styleContactContainer } from "./contact.style";
+import style from "./contact.style";
 
 const Contact = () => {
   return (
-    <article className={styleContactContainer}>
+    <article className={style.contactContainer}>
       <h3>Contact</h3>
     </article>
   );

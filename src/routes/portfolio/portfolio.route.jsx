@@ -1,9 +1,4 @@
-import {
-  styleProjectsPageContainer,
-  stylePortfolioPaginator,
-  stylePortfolioPageButton,
-  stylePortfolioPageButtonActive,
-} from "./portfolio.style";
+import style from "./portfolio.style";
 import { content } from "../../store/content";
 import { clsx } from "clsx";
 import { useEffect } from "react";
@@ -16,7 +11,6 @@ const Portfolio = () => {
   const { pageNumber } = useParams();
   const navigate = useNavigate();
   const { projects } = content;
-  const locale = usePortfolioStore(({ activeLanguage }) => activeLanguage);
   const { width: windowWidth, height: windowHeight } = usePortfolioStore(
     ({ windowDimentions }) => windowDimentions
   );
@@ -31,7 +25,7 @@ const Portfolio = () => {
       ? 2
       : 1;
   const pages = new Array(
-    Math.ceil(projects[locale].length / (maxColumns * maxRows))
+    Math.ceil(projects.length / (maxColumns * maxRows))
   ).fill(0);
   const { PARENT } = PATHS;
   // set the 1st page in 2 cases:
@@ -43,15 +37,15 @@ const Portfolio = () => {
   });
 
   return (
-    <div className={styleProjectsPageContainer}>
-      <div className={stylePortfolioPaginator}>
+    <div className={style.projectsPageContainer}>
+      <div className={style.portfolioPaginator}>
         <h2></h2>
         {pages.map((_, i) => (
           <button
             key={i}
             className={clsx(
-              stylePortfolioPageButton,
-              pageNumber == i + 1 && stylePortfolioPageButtonActive
+              style.portfolioPageButton,
+              pageNumber == i + 1 && style.portfolioPageButtonActive
             )}
             onClick={() => navigate(PARENT + (i + 1))}
           >

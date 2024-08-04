@@ -1,10 +1,26 @@
-import { styleCvContainer } from "./cv.style";
+import style from "./cv.style.js";
+import { content } from "../../store/content";
+import TimelineItem from "../../components/timeline-item/timeline-item";
+import { usePortfolioStore } from "../../store/store";
 
 const CurriculumVitae = () => {
+  const { cv } = content;
+  const locale = usePortfolioStore(({ activeLanguage }) => activeLanguage);
   return (
-    <article className={styleCvContainer}>
-      <h3>CV</h3>
-    </article>
+    <div className={style.cvContainer}>
+      <ul className={style.timelineList}>
+        {cv.map(({ date, title, description }, i) => (
+          <TimelineItem
+            key={i}
+            date={date[locale]}
+            title={title[locale]}
+            description={description[locale]}
+            isFirst={i === 0}
+            isLast={i === cv.length - 1}
+          />
+        ))}
+      </ul>
+    </div>
   );
 };
 
