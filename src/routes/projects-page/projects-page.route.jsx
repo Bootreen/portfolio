@@ -1,9 +1,4 @@
-import {
-  styleProjectsContainer,
-  styleProjectsContainerLarge,
-  styleProjectsContainerHuge,
-  styleProjectsColumn,
-} from "./projects-page.style";
+import style from "./projects-page.style";
 import { content } from "../../store/content";
 import { clsx } from "clsx";
 import { useParams, useOutletContext } from "react-router-dom";
@@ -20,13 +15,13 @@ const ProjectsPage = () => {
   return (
     <div
       className={clsx(
-        styleProjectsContainer, //                 default grid layout - 1 column
-        isLarge && styleProjectsContainerLarge, // windowWidth >= 1280 - 2 columns
-        isHuge && styleProjectsContainerHuge //    windowWidth >= 1920 - 3 columns
+        style.projectsContainer, //                 default grid layout - 1 column
+        isLarge && style.projectsContainerLarge, // windowWidth >= 1280 - 2 columns
+        isHuge && style.projectsContainerHuge //    windowWidth >= 1920 - 3 columns
       )}
     >
       {columns.map((_, columnIndex) => (
-        <div key={columnIndex} className={styleProjectsColumn}>
+        <div key={columnIndex} className={style.projectsColumn}>
           {projects
             .sort(({ id: a }, { id: b }) => a - b)
             // filter projects that belong to the current page

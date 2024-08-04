@@ -1,4 +1,4 @@
-import { styleMainContainer } from "./root.styles";
+import style from "./root.style";
 import { usePortfolioStore, usePortfolioActions } from "../../store/store";
 import Header from "../../components/header/header.component";
 import Footer from "../../components/footer/footer-component";
@@ -10,7 +10,7 @@ const RootLayout = () => {
   // Track window resize for portfolio dynamic grid layout rerender
   window.addEventListener("resize", updateWindowDimentions);
   return (
-    <div className={styleMainContainer} data-theme={theme}>
+    <div className={style.mainContainer} data-theme={theme}>
       <Header />
       <Outlet />
       <Footer />

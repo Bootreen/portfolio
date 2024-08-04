@@ -1,9 +1,4 @@
-import {
-  styleProjectsPageContainer,
-  stylePortfolioPaginator,
-  stylePortfolioPageButton,
-  stylePortfolioPageButtonActive,
-} from "./portfolio.style";
+import style from "./portfolio.style";
 import { content } from "../../store/content";
 import { clsx } from "clsx";
 import { useEffect } from "react";
@@ -42,15 +37,15 @@ const Portfolio = () => {
   });
 
   return (
-    <div className={styleProjectsPageContainer}>
-      <div className={stylePortfolioPaginator}>
+    <div className={style.projectsPageContainer}>
+      <div className={style.portfolioPaginator}>
         <h2></h2>
         {pages.map((_, i) => (
           <button
             key={i}
             className={clsx(
-              stylePortfolioPageButton,
-              pageNumber == i + 1 && stylePortfolioPageButtonActive
+              style.portfolioPageButton,
+              pageNumber == i + 1 && style.portfolioPageButtonActive
             )}
             onClick={() => navigate(PARENT + (i + 1))}
           >
