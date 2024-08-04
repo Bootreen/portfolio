@@ -208,7 +208,7 @@ export const content = {
       },
     },
     {
-      id: 4,
+      id: 6,
       project: {
         title: {
           EN: "Calculator",
@@ -274,7 +274,7 @@ export const content = {
       },
     },
     {
-      id: 7,
+      id: 9,
       project: {
         title: {
           EN: "Drum Machine",
@@ -340,7 +340,7 @@ export const content = {
       },
     },
     {
-      id: 8,
+      id: 10,
       project: {
         title: {
           EN: "Markdown Previewer",
@@ -406,7 +406,7 @@ export const content = {
       },
     },
     {
-      id: 5,
+      id: 7,
       project: {
         title: {
           EN: "ToDo Reminder",
@@ -484,7 +484,7 @@ export const content = {
       },
     },
     {
-      id: 6,
+      id: 8,
       project: {
         title: {
           EN: "User DB Viewer",
@@ -565,7 +565,7 @@ export const content = {
       },
     },
     {
-      id: 9,
+      id: 11,
       project: {
         title: {
           EN: "Laptop Store Mockup",
@@ -646,7 +646,7 @@ export const content = {
       },
     },
     {
-      id: 10,
+      id: 12,
       project: {
         title: {
           EN: "Tribute Page",
@@ -715,7 +715,7 @@ export const content = {
       },
     },
     {
-      id: 3,
+      id: 5,
       project: {
         title: {
           EN: "Portfolio",
@@ -781,6 +781,150 @@ export const content = {
             {
               caption: "Репозиторій",
               url: "https://github.com/Bootreen/portfolio",
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: 13,
+      project: {
+        title: {
+          EN: "Pomodoro Clock",
+          DE: "Pomodoro-Uhr",
+          UA: "Помодоро-годинник",
+        },
+        image: {
+          EN: "/pomodoro.jpg",
+          DE: "/pomodoro.jpg",
+          UA: "/pomodoro.jpg",
+        },
+        features: {
+          EN: [
+            "Individual work/break timers",
+            "React hooks for state management",
+            "Sound playback for alarm clock",
+            "Neat ms conversion",
+          ],
+          DE: [
+            "Individuelle Timer",
+            "Hooks für Zustandsverwaltung",
+            "Soundwiedergabe für Wecker",
+            "Intelligente ms-Umwandlung",
+          ],
+          UA: [
+            "Два таймера для роботи/перерви",
+            "Hooks для керування станом",
+            "Звук для будильника",
+            "Умний перерахунок мс",
+          ],
+        },
+        description: {
+          EN: [
+            "A simple Pomodoro timer to help combat procrastination on complex tasks. The most interesting aspect here, in my opinion, is the implementation of the millisecond-to-second/minute conversion, which I achieved with a single expression using nested ternary operators.",
+          ],
+          DE: [
+            "Ein einfacher Pomodoro-Timer zur Bekämpfung von Prokrastination bei komplexen Aufgaben. Das Interessanteste hierbei ist meiner Meinung nach die Implementierung der Umrechnung von Millisekunden in Sekunden/Minuten, die ich mit einem einzigen Ausdruck unter Verwendung von verschachtelten ternären Operatoren erreicht habe.",
+          ],
+          UA: [
+            "Простий помодоро-таймер для боротьби з прокрастинацією на складних завданнях. Найцікавіший аспект тут, на мою думку, — це реалізація перетворення мілісекунд у секунди/хвилини, яке я здійснив за допомогою одного виразу з використанням вкладених тернарних операторів.",
+          ],
+        },
+        buttons: {
+          EN: [
+            {
+              caption: "View on Codepen.io",
+              url: "https://codepen.io/bootreen/pen/zYLYOZP",
+            },
+          ],
+          DE: [
+            {
+              caption: "Auf Codepen.io ansehen",
+              url: "https://codepen.io/bootreen/pen/zYLYOZP",
+            },
+          ],
+          UA: [
+            {
+              caption: "Переглянути на Codepen.io",
+              url: "https://codepen.io/bootreen/pen/zYLYOZP",
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: 3,
+      project: {
+        title: {
+          EN: "Library Backend",
+          DE: "Bibliotheks-Backend",
+          UA: "Бекенд бібліотеки",
+        },
+        image: {
+          EN: "/library.jpg",
+          DE: "/library.jpg",
+          UA: "/library.jpg",
+        },
+        features: {
+          EN: [
+            "Express + PostgreSQL",
+            "Textbook project structure",
+            "Error handling",
+            "Bulk operations",
+          ],
+          DE: [
+            "Express + PostgreSQL",
+            "Vorbildliche Projektstruktur",
+            "Fehlerbehandlung",
+            "Massenoperationen",
+          ],
+          UA: [
+            "Express + PostgreSQL",
+            "Класична структура проекту",
+            "Обробка помилок",
+            "Масові операції",
+          ],
+        },
+        description: {
+          EN: [
+            "An Express server for a group training project. Despite the training nature of the task, I approached the project in a professional manner. Controllers, routers, and a separate database layer are used. Beyond the basic requirements, I implemented bulk content addition (up to hundreds of records at a time) for testing convenience. Error handling is written for all database interactions, and comprehensive documentation is created for the project's API.",
+          ],
+          DE: [
+            "Ein Express-Server für ein Gruppenprojekt. Trotz des Übungscharakters der Aufgabe habe ich das Projekt professionell angegangen. Controller, Router und eine separate Datenbankschicht werden verwendet. Über die Grundanforderungen hinaus habe ich das massenhafte Hinzufügen von Inhalten (bis zu Hunderten von Einträgen gleichzeitig) zur Erleichterung des Testens implementiert. Fehlerbehandlung ist für alle Datenbankinteraktionen geschrieben, und umfassende Dokumentation ist für die API des Projekts erstellt.",
+          ],
+          UA: [
+            "Express-сервер для групового навчального проекту. Незважаючи на тренувальний характер завдання, я підійшов до проекту по-дорослому. Використовуються контролери, роутери, робота з БД винесена в окремий шар. Понад базове ТЗ реалізовано масове додавання контенту (до сотень записів за раз) для зручності тестування. Для всіх звернень до БД написана обробка помилок, а для API проекту складена вичерпна документація.",
+          ],
+        },
+        buttons: {
+          EN: [
+            {
+              caption: "Open project",
+              url: "https://boot-library.onrender.com/",
+            },
+            {
+              caption: "Repository",
+              url: "https://github.com/Bootreen/library",
+            },
+          ],
+          DE: [
+            {
+              caption: "Projekt öffnen",
+              url: "https://boot-library.onrender.com/",
+            },
+            {
+              caption: "Repository",
+              url: "https://github.com/Bootreen/library",
+            },
+          ],
+          UA: [
+            {
+              caption: "Відкрити проект",
+              url: "https://boot-library.onrender.com/",
+            },
+            {
+              caption: "Репозиторій",
+              url: "https://github.com/Bootreen/library",
             },
           ],
         },
