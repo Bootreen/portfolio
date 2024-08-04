@@ -1,11 +1,4 @@
-import {
-  styleDescriptionContainer,
-  styleDescriptionContent,
-  styleDescriptionHeading,
-  styleDescriptionParagraph,
-  stylePhotoSquare,
-  stylePhotoVertical,
-} from "./intro.style";
+import style from "./intro.style";
 import { content } from "../../store/content";
 import { usePortfolioStore } from "../../store/store";
 
@@ -15,14 +8,14 @@ const Intro = () => {
     about: { heading, description },
   } = content;
   return (
-    <div className={styleDescriptionContainer}>
-      <div className={styleDescriptionContent}>
-        <img src='/photo-sq.jpg' className={stylePhotoSquare} />
-        <img src='/photo-ver.jpg' className={stylePhotoVertical} />
+    <div className={style.descriptionContainer}>
+      <div className={style.descriptionContent}>
+        <img src='/photo-sq.jpg' className={style.photoSquare} />
+        <img src='/photo-ver.jpg' className={style.photoVertical} />
         <div>
-          <h1 className={styleDescriptionHeading}>{heading[locale]}</h1>
+          <h1 className={style.descriptionHeading}>{heading[locale]}</h1>
           {description[locale].map((paragraph, index) => (
-            <p key={index} className={styleDescriptionParagraph}>
+            <p key={index} className={style.descriptionParagraph}>
               {paragraph}
             </p>
           ))}

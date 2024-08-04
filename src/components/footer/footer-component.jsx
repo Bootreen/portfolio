@@ -1,11 +1,4 @@
-import {
-  styleFooterContainer,
-  styleFooterContent,
-  styleLogo,
-  styleCopyright,
-  styleGithubLogo,
-  styleTextLink,
-} from "./footer.style";
+import style from "./footer.style";
 import { content } from "../../store/content";
 import { usePortfolioStore } from "../../store/store";
 
@@ -15,15 +8,15 @@ const Footer = () => {
     footer: { butrin, github },
   } = content;
   return (
-    <footer className={styleFooterContainer}>
-      <aside className={styleFooterContent}>
-        <img src='/boot.svg' className={styleLogo}></img>
-        <p className={styleCopyright}>{butrin[locale]}</p>
+    <footer className={style.footerContainer}>
+      <aside className={style.footerContent}>
+        <img src='/boot.svg' className={style.logo}></img>
+        <p className={style.copyright}>{butrin[locale]}</p>
         <a href='https://github.com/bootreen'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 106.5 105'
-            className={styleGithubLogo}
+            className={style.githubLogo}
           >
             <path
               fillRule='evenodd'
@@ -33,7 +26,7 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a className={styleTextLink} href='https://github.com/bootreen'>
+        <a className={style.textLink} href='https://github.com/bootreen'>
           {github[locale]}
         </a>
       </aside>

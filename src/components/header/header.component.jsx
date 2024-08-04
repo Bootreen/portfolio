@@ -1,12 +1,4 @@
-import {
-  styleHeaderContainer,
-  styleNavBarContainer,
-  styleNavBarStart,
-  styleNavBarEnd,
-  styleThemeSwitcher,
-  styleLanguageSelector,
-  styleLanguageOption,
-} from "./header.style";
+import style from "./header.style";
 import { content } from "../../store/content";
 import { PATHS } from "../../store/paths";
 import { THEMES, LANGUAGES } from "../../store/constants";
@@ -26,10 +18,10 @@ const Header = () => {
     menuItems: { about, portfolio, cv, contact },
   } = content;
   return (
-    <header className={styleHeaderContainer}>
-      <div className={styleNavBarContainer}>
-        <div className={styleNavBarStart}>
-          <label className={styleThemeSwitcher}>
+    <header className={style.headerContainer}>
+      <div className={style.navBarContainer}>
+        <div className={style.navBarStart}>
+          <label className={style.themeSwitcher}>
             <input type='checkbox' onChange={() => switchTheme()} />
             <Day active={userPreferredTheme === LIGHT} />
             <Night active={userPreferredTheme === DARK} />
@@ -39,16 +31,16 @@ const Header = () => {
         <MenuItem path={PORTFOLIO} caption={portfolio[locale]} />
         <MenuItem path={CV} caption={cv[locale]} />
         <MenuItem path={CONTACT} caption={contact[locale]} />
-        <div className={styleNavBarEnd}>
+        <div className={style.navBarEnd}>
           <select
-            className={styleLanguageSelector}
+            className={style.languageSelector}
             value={locale}
             onChange={(event) => switchLanguage(event.target.value)}
           >
             {Object.entries(LANGUAGES).map(([id, language]) => (
               <option
                 key={id}
-                className={styleLanguageOption}
+                className={style.languageOption}
                 disabled={language === locale}
                 value={language}
               >

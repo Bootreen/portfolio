@@ -1,15 +1,4 @@
-import {
-  styleProjectCardContainer,
-  styleProjectCardPreview,
-  styleProjectCardThumbnail,
-  styleProjectCardImage,
-  styleProjectCardInfoContainer,
-  styleProjectCardTitle,
-  styleProjectCardFeatures,
-  styleProjectCardDetails,
-  styleProjectCardButtonsContainer,
-  styleNavButton,
-} from "./project-card.style";
+import style from "./project-card.style";
 
 const ProjectCard = ({
   title,
@@ -19,27 +8,27 @@ const ProjectCard = ({
   buttons,
   isChecked,
 }) => (
-  <div className={styleProjectCardContainer}>
+  <div className={style.projectCardContainer}>
     <input type='radio' name='projects' defaultChecked={isChecked} />
-    <div className={styleProjectCardPreview}>
-      <img className={styleProjectCardThumbnail} src={image} />
-      <div className={styleProjectCardInfoContainer}>
-        <h3 className={styleProjectCardTitle}>{title}</h3>
-        <ul className={styleProjectCardFeatures}>
+    <div className={style.projectCardPreview}>
+      <img className={style.projectCardThumbnail} src={image} />
+      <div className={style.projectCardInfoContainer}>
+        <h3 className={style.projectCardTitle}>{title}</h3>
+        <ul className={style.projectCardFeatures}>
           {features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
         </ul>
       </div>
     </div>
-    <div className={styleProjectCardDetails}>
-      <img className={styleProjectCardImage} src={image} />
+    <div className={style.projectCardDetails}>
+      <img className={style.projectCardImage} src={image} />
       {description.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
-      <div className={styleProjectCardButtonsContainer}>
+      <div className={style.projectCardButtonsContainer}>
         {buttons.map(({ caption, url }, index) => (
-          <a key={index} className={styleNavButton} href={url}>
+          <a key={index} className={style.navButton} href={url}>
             {caption}
           </a>
         ))}
