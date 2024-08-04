@@ -8,7 +8,7 @@ import { content } from "../../store/content";
 import { clsx } from "clsx";
 import { useParams, useOutletContext } from "react-router-dom";
 import { usePortfolioStore } from "../../store/store";
-import ProjectCard from "../../components/project-card/project-card.component";
+import ProjectCard from "../project-card/project-card.component";
 
 const ProjectsPage = () => {
   const { projects } = content;
