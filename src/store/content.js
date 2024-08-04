@@ -817,16 +817,16 @@ export const content = {
         UA: "2016 – 2023",
       },
       title: {
-        EN: "Founder, Frontend Developer, Web Designer",
-        DE: "Gründer, Frontend-Entwickler, Webdesigner",
-        UA: "Засновник, Frontend-розробник, Веб-дизайнер",
+        EN: "Founder, Frontend Developer",
+        DE: "Gründer, Frontend-Entwickler",
+        UA: "Засновник, Frontend-розробник",
       },
       description: {
         EN: [
           "p---Tangelo Cat — Ukrainian brand for hot sauces (Kyiv, Ukraine).",
           "ul---",
           "li---Designed and developed HTML landing pages and a SaaS-based e-shop.",
-          "li---Managed and created website content and texts.",
+          "li---Created and managed website content.",
           "li---Social media marketing.",
         ],
         DE: [
@@ -839,7 +839,7 @@ export const content = {
         UA: [
           "p---Tangelo Cat — Український бренд гострих соусів (Київ, Україна).",
           "ul---",
-          "li---Розробка та створення HTML-ландінгів і SaaS-базованого інтернет-магазину.",
+          "li---Розробка та створення HTML-ландінгів та інтернет-магазину на SaaS.",
           "li---Управління та створення контенту та текстів для вебсайту.",
           "li---Маркетинг у соціальних мережах.",
         ],
@@ -858,7 +858,7 @@ export const content = {
       },
       description: {
         EN: [
-          "p---Flugschule und -agentur Plane Ukraine (Kyiv, Ukraine).",
+          "p---Flight school und -agency Plane Ukraine (Kyiv, Ukraine).",
           "ul---",
           "li---Content management (website) and copywriting for the flight school.",
           "li---Developed and maintained a comprehensive database of Ukrainian sport airfields.",
@@ -875,7 +875,7 @@ export const content = {
           "p---Авіашкола та агентство Plane Ukraine (Київ, Україна).",
           "ul---",
           "li---Управління контентом (вебсайт) та створення текстів для авіашколи.",
-          "li---Розробка та підтримка комплексної бази даних українських спортивних аеродромів.",
+          "li---Розробка та підтримка комплексної бази даних українських малих аеродромів.",
           "li---Управління покращенням зручності використання (UX) вебсайту.",
         ],
       },
@@ -907,7 +907,7 @@ export const content = {
           "li---Texterstellung und Weiterentwicklung von Contentplänen.",
         ],
         UA: [
-          "p---Digital Socium Marketingова агенція (Москва, Росія).",
+          "p---Маркетингова агенція Digital Socium (Москва, Росія).",
           "ul---",
           "li---Презентації для клієнтів.",
           "li---Проведення проектних аналізів та звітності.",
@@ -924,7 +924,7 @@ export const content = {
       title: {
         EN: "Editor/Translator",
         DE: "Redakteur/Übersetzer",
-        UA: "Редактор/Перекладач",
+        UA: "Редактор/перекладач",
       },
       description: {
         EN: [
