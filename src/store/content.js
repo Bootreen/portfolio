@@ -889,7 +889,7 @@ export const content = {
       title: {
         EN: "Editor/Copywriter",
         DE: "Redakteur/Texter",
-        UA: "Редактор/Копірайтер",
+        UA: "Редактор/копірайтер",
       },
       description: {
         EN: [
@@ -991,7 +991,7 @@ export const content = {
       title: {
         EN: "Author/Editor",
         DE: "Autor/Redakteur",
-        UA: "Автор/Редактор",
+        UA: "Автор/редактор",
       },
       description: {
         EN: ["p---Various IT magazines (Donetsk, Ukraine/Moscow, Russia)."],
