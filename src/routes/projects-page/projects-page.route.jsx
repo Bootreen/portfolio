@@ -17,43 +17,6 @@ const ProjectsPage = () => {
   const [isLarge, isHuge, maxColumns, maxRows] = useOutletContext();
   const columns = new Array(maxColumns).fill(0);
 
-  // const restructured = [];
-
-  // projects.EN.forEach((project, index) => {
-  //   restructured.push({
-  //     id: index + 1,
-  //     project: {
-  //       title: {
-  //         EN: project.title,
-  //         DE: projects.DE[index].title,
-  //         UA: projects.UA[index].title,
-  //       },
-  //       image: {
-  //         EN: project.image,
-  //         DE: projects.DE[index].image,
-  //         UA: projects.UA[index].image,
-  //       },
-  //       features: {
-  //         EN: project.features,
-  //         DE: projects.DE[index].features,
-  //         UA: projects.UA[index].features,
-  //       },
-  //       description: {
-  //         EN: project.description,
-  //         DE: projects.DE[index].description,
-  //         UA: projects.UA[index].description,
-  //       },
-  //       buttons: {
-  //         EN: project.buttons,
-  //         DE: projects.DE[index].buttons,
-  //         UA: projects.UA[index].buttons,
-  //       },
-  //     },
-  //   });
-  // });
-
-  // console.log(restructured);
-
   return (
     <div
       className={clsx(

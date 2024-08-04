@@ -1,33 +1,26 @@
-import TimelineItem from "../../components/timeline-item/timeline-item";
 import style from "./cv.style.js";
+import { content } from "../../store/content";
+import TimelineItem from "../../components/timeline-item/timeline-item";
+import { usePortfolioStore } from "../../store/store";
 
 const CurriculumVitae = () => {
+  const { cv } = content;
+  const locale = usePortfolioStore(({ activeLanguage }) => activeLanguage);
   return (
-    <article className={style.cvContainer}>
+    <div className={style.cvContainer}>
       <ul className={style.timelineList}>
-        <TimelineItem
-          date='from 2024'
-          title='Further training as Fullstack developer'
-          content='Taktsoft Talents Bootcamp, Bonn. Learning the following technologies: RESTful APIs, Node.js, Express, SQL & NoSQL (Postgres, Mongo DB), CRUD operations.'
-          isFirst={true}
-          isLast={false}
-        />
-        <TimelineItem
-          date='from 2024'
-          title='Further training as Fullstack developer'
-          content='Taktsoft Talents Bootcamp, Bonn. Learning the following technologies: RESTful APIs, Node.js, Express, SQL & NoSQL (Postgres, Mongo DB), CRUD operations.'
-          isFirst={false}
-          isLast={false}
-        />
-        <TimelineItem
-          date='from 2024'
-          title='Further training as Fullstack developer'
-          content='Taktsoft Talents Bootcamp, Bonn. Learning the following technologies: RESTful APIs, Node.js, Express, SQL & NoSQL (Postgres, Mongo DB), CRUD operations.'
-          isFirst={false}
-          isLast={true}
-        />
+        {cv.map(({ date, title, description }, i) => (
+          <TimelineItem
+            key={i}
+            date={date[locale]}
+            title={title[locale]}
+            description={description[locale]}
+            isFirst={i === 0}
+            isLast={i === cv.length - 1}
+          />
+        ))}
       </ul>
-    </article>
+    </div>
   );
 };
 
