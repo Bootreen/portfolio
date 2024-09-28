@@ -4006,11 +4006,6 @@ details.collapse summary::-webkit-details-marker {
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
 }
 
-.bg-base-200 {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
-}
-
 .bg-base-300 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
@@ -4105,10 +4100,6 @@ details.collapse summary::-webkit-details-marker {
 
 .pr-4 {
   padding-right: 1rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
 }
 
 .pt-4 {
@@ -4620,16 +4611,17 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 0.5rem;
   }
 
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:pb-36 {
     padding-bottom: 9rem;
   }
 
   .md\:pl-4 {
     padding-left: 1rem;
-  }
-
-  .md\:pt-20 {
-    padding-top: 5rem;
   }
 
   .md\:text-3xl {
