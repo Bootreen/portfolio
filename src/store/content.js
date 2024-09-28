@@ -49,6 +49,90 @@ export const content = {
   },
   projects: [
     {
+      id: 0,
+      project: {
+        title: {
+          EN: "Sarge Obvious",
+          DE: "Sarge Obvious",
+          UA: "Sarge Obvious",
+        },
+        image: {
+          EN: "/sarge-obvious.png",
+          DE: "/sarge-obvious.png",
+          UA: "/sarge-obvious.png",
+        },
+        features: {
+          EN: [
+            "Google Gemini AI API",
+            "Formulas and code snippets support",
+            "PostgreSQL for session storage",
+            "Fully responsive",
+          ],
+          DE: [
+            "Google Gemini AI API",
+            "Formeln und Code-Snippets",
+            "PostgreSQL für Sitzungsdaten",
+            "Vollständig responsiv",
+          ],
+          UA: [
+            "Google Gemini AI API",
+            "Підтримка формул та код-сніпетів",
+            "PostgreSQL для зберігання сесій",
+            "Повністю адаптивний",
+          ],
+        },
+        description: {
+          EN: [
+            "This AI-powered learning assistant called 'Sarge Obvious' generates study materials in real-time. It can be guides, flashcards, matching pairs, and quizzes for any given topic. My app adds to basic AI chat a feature, that it lacks — interactivity.",
+            "It supports Clerk-based authentication with the ability to save session data.",
+            "The app is mobile-ready, supports light/dark themes, and renders Markdown correctly with formulas and code snippets.",
+          ],
+          DE: [
+            "Dieser KI-gestützte Lernassistent namens 'Sarge Offensichtlich' erstellt Lernmaterialien in Echtzeit. Es können Anleitungen, Lernkarten, Zuordnungspaare und Quizze für jedes Thema generiert werden. Meine App fügt dem grundlegenden KI-Chat eine fehlende Funktion hinzu — Interaktivität.",
+            "Es unterstützt die Clerk-basierte Authentifizierung mit der Möglichkeit, Sitzungsdaten zu speichern.",
+            "Die App ist für mobile Geräte optimiert, unterstützt helle/dunkle Themes und rendert Markdown korrekt mit Formeln und Code-Snippets.",
+          ],
+          UA: [
+            "Цей навчальний асистент на базі штучного інтелекту під назвою 'Sarge Obvious' генерує навчальні матеріали в реальному часі. Це можуть бути гіди, картки, пари та вікторини для будь-якої теми. Моя програма додає до базового AI-чату те, чого йому бракує — інтерактивність.",
+            "Підтримується автентифікація через Clerk з можливістю збереження сесійних даних.",
+            "Додаток адаптований для мобільних пристроїв, підтримує світлу/темну тему та коректно відображає Markdown із формулами та код-сніпетами.",
+          ],
+        },
+        buttons: {
+          EN: [
+            {
+              caption: "Open project",
+              url: "https://sarge-obvious.vercel.app/",
+            },
+            {
+              caption: "Repository",
+              url: "https://github.com/Bootreen/obvious",
+            },
+          ],
+          DE: [
+            {
+              caption: "Projekt öffnen",
+              url: "https://sarge-obvious.vercel.app/",
+            },
+            {
+              caption: "Repository",
+              url: "https://github.com/Bootreen/obvious",
+            },
+          ],
+          UA: [
+            {
+              caption: "Відкрити проект",
+              url: "https://sarge-obvious.vercel.app/",
+            },
+            {
+              caption: "Репозиторій",
+              url: "https://github.com/Bootreen/obvious",
+            },
+          ],
+        },
+      },
+    },
+    {
       id: 1,
       project: {
         title: {
@@ -729,19 +813,19 @@ export const content = {
         },
         features: {
           EN: [
-            "TailwindCSS + DaisyUI",
+            "Tailwind CSS + DaisyUI",
             "Adaptive layout",
             "Multilanguage support",
             "Light/Dark theme",
           ],
           DE: [
-            "TailwindCSS + DaisyUI",
+            "Tailwind CSS + DaisyUI",
             "Adaptives Layout",
             "Mehrsprachige Unterstützung",
             "Licht/Dunkel-Thema",
           ],
           UA: [
-            "TailwindCSS + DaisyUI",
+            "Tailwind CSS + DaisyUI",
             "Адаптивний макет",
             "Підтримка кількох мов",
             "Світла/Темна тема",
