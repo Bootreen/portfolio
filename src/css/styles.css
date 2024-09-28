@@ -4073,6 +4073,11 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 0.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -4462,6 +4467,10 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 0px;
 }
 
+.prose-headings\:text-center :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  text-align: center;
+}
+
 .prose-p\:mt-0 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   margin-top: 0px;
 }
@@ -4527,6 +4536,11 @@ details.collapse summary::-webkit-details-marker {
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:prose-p\:text-base :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
