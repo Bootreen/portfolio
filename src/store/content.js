@@ -133,7 +133,7 @@ export const content = {
       id: 2,
       project: {
         title: {
-          EN: "CSS Methdologies",
+          EN: "CSS Methodologies",
           DE: "CSS-Methodologien",
           UA: "Методології CSS",
         },
