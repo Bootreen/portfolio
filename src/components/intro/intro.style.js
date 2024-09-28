@@ -1,6 +1,6 @@
 const style = {
   descriptionContainer: "hero min-h-screen py-12 bg-base-300 md:pb-36",
-  descriptionContent: "hero-content flex-col lg:flex-row scrollbar-hide",
+  descriptionContent: "hero-content flex-col lg:flex-row",
   descriptionHeading:
     "pb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center lg:text-left font-bold",
   descriptionParagraph:
