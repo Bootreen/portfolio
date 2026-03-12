@@ -1017,7 +1017,33 @@ export const content = {
   ],
   cv: [
     {
-      date: { EN: "from 2024", DE: "seit 2024", UA: "з 2024" },
+      date: { EN: "from Sep 2025", DE: "seit Sep. 2024", UA: "з вер. 2024" },
+      title: {
+        EN: "Volunteer Web-Developer",
+        DE: "Ehrenamtlicher Webentwickler",
+        UA: "Веброзробник-волонтер",
+      },
+      description: {
+        EN: [
+          "p---Development and technical maintenance of the theater website (based on Next.js)",
+          "p---Hosting setup and management, content localization (DE/UA → EN)",
+        ],
+        DE: [
+          "p---Entwicklung und technische Betreuung der Theater-Website (auf Basis des Next.js)",
+          "p---Einrichtung und Verwaltung des Hostings, Lokalisierung der Inhalte (DE/UA → EN)",
+        ],
+        UA: [
+          "p---Розробка та технічна підтримка вебсайту театру (на основі Next.js)",
+          "p---Налаштування та управління хостингом, локалізація контенту (DE/UA → EN)",
+        ],
+      },
+    },
+    {
+      date: {
+        EN: "May - Sep 2024",
+        DE: "Mai - Sep. 2024",
+        UA: "трав. - вер. 2024",
+      },
       title: {
         EN: "Further training as Fullstack Developer",
         DE: "Weiterbildung zum Fullstack-Entwickler",
