@@ -49,6 +49,75 @@ export const content = {
   },
   projects: [
     {
+      id: 9,
+      project: {
+        title: {
+          EN: "Mria Theater Website",
+          DE: "Webseite des Theaters Mria",
+          UA: "Вебсайт театру Мрія",
+        },
+        image: {
+          EN: "/mriya.jpg",
+          DE: "/mriya.jpg",
+          UA: "/mriya.jpg",
+        },
+        features: {
+          EN: [
+            "Next.js + Mantine UI",
+            "Multilingual with swipe navigation",
+            "Contact form via Nodemailer",
+            "Auto-aligned thumbnail gallery",
+          ],
+          DE: [
+            "Next.js + Mantine UI",
+            "Mehrsprachig mit Swipe-Navigation",
+            "Kontaktformular via Nodemailer",
+            "Automatisch ausgerichtete Galerie",
+          ],
+          UA: [
+            "Next.js + Mantine UI",
+            "Багатомовний з навігацією свайпом",
+            "Фідбек-форма через Nodemailer",
+            "Галерея з автовирівнюванням тамбнейлів",
+          ],
+        },
+        description: {
+          EN: [
+            "Website for Mria — the first Ukrainian theater in Bonn. Built with Next.js and Mantine UI, the site is fully responsive and supports three languages. On mobile, sections are navigated via swipe gestures. A contact form is powered by Nodemailer, and the photo gallery features automatic thumbnail alignment.",
+            "Currently in development: migration of content to Supabase and a matching admin panel for easier updates.",
+          ],
+          DE: [
+            "Webseite für Mria — das erste ukrainische Theater in Bonn. Entwickelt mit Next.js und Mantine UI, vollständig responsiv und dreisprachig. Auf mobilen Geräten kann zwischen den Abschnitten per Swipe gewechselt werden. Das Kontaktformular basiert auf Nodemailer, die Fotogalerie richtet Vorschaubilder automatisch aus.",
+            "In Entwicklung: Migration der Inhalte auf Supabase sowie ein dazugehöriges Admin-Panel für komfortablere Aktualisierungen.",
+          ],
+          UA: [
+            "Вебсайт театру Мрія — першого українського театру в Бонні. Розроблений на Next.js і Mantine UI, повністю адаптивний, підтримує три мови. У мобільній версії розділи перемикаються свайпами. Форма зворотного зв'язку реалізована через Nodemailer, галерея підтримує автовирівнювання тамбнейлів.",
+            "У розробці: перенесення контенту на Supabase і створення адмінки на її основі для зручнішого оновлення.",
+          ],
+        },
+        buttons: {
+          EN: [
+            {
+              caption: "Open project",
+              url: "https://theater-mriya-bonn.de/",
+            },
+          ],
+          DE: [
+            {
+              caption: "Projekt öffnen",
+              url: "https://theater-mriya-bonn.de/",
+            },
+          ],
+          UA: [
+            {
+              caption: "Відкрити проект",
+              url: "https://theater-mriya-bonn.de/",
+            },
+          ],
+        },
+      },
+    },
+    {
       id: 10,
       project: {
         title: {
