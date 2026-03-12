@@ -31,7 +31,7 @@ export const content = {
         "I am a seasoned web developer with an extensive background in the tech industry. My journey is defined by passion, resilience, and continuous learning. With over 20 years in the information technology industry, I have a deep understanding of the IT landscape from both a technical and user perspective.",
         "My expertise lies in TypeScript, JavaScript, HTML5, and CSS3. I am proficient with React and Next.js, and skilled in CSS tools such as SASS/SCSS, Tailwind CSS, NextUI, and Styled Components. My backend capabilities include working with SQL and NoSQL databases, particularly PostgreSQL and MongoDB, as well as technologies like Node.js/Express, REST, and GraphQL. Additionally, I am adept at state management using Redux and Zustand + Immer. I also have experience with generative AI APIs.",
         "Fluent in Ukrainian, Russian, and highly proficient in English, I am also making progress in German. In the teams I've worked with, I am valued for my trustworthiness, work ethic, persistence, attention to detail, and consistent sense of humor. I enjoy refining existing codebases and optimizing solutions for better performance and clean code.",
-        "Let’s collaborate to create something meaningful and impactful!",
+        "Let's collaborate to create something meaningful and impactful!",
       ],
       DE: [
         "Ich bin ein erfahrener Webentwickler mit umfassendem Hintergrund in der Technologiebranche. Meine Reise ist geprägt von Leidenschaft, Ausdauer und stetigem Lernen. Mit über 20 Jahren Erfahrung in der IT-Branche habe ich ein tiefes Verständnis der IT-Landschaft aus technischer und nutzerorientierter Sicht.",
@@ -49,7 +49,7 @@ export const content = {
   },
   projects: [
     {
-      id: 0,
+      id: 10,
       project: {
         title: {
           EN: "Sarge Obvious",
@@ -133,7 +133,7 @@ export const content = {
       },
     },
     {
-      id: 1,
+      id: 11,
       project: {
         title: {
           EN: "Frontend Quiz App",
@@ -214,7 +214,7 @@ export const content = {
       },
     },
     {
-      id: 2,
+      id: 12,
       project: {
         title: {
           EN: "CSS Methodologies",
@@ -292,7 +292,157 @@ export const content = {
       },
     },
     {
-      id: 6,
+      id: 13,
+      project: {
+        title: {
+          EN: "Library Backend",
+          DE: "Bibliotheks-Backend",
+          UA: "Бекенд бібліотеки",
+        },
+        image: {
+          EN: "/library.jpg",
+          DE: "/library.jpg",
+          UA: "/library.jpg",
+        },
+        features: {
+          EN: [
+            "Express + PostgreSQL",
+            "Textbook project structure",
+            "Error handling",
+            "Bulk operations",
+          ],
+          DE: [
+            "Express + PostgreSQL",
+            "Vorbildliche Projektstruktur",
+            "Fehlerbehandlung",
+            "Massenoperationen",
+          ],
+          UA: [
+            "Express + PostgreSQL",
+            "Класична структура проекту",
+            "Обробка помилок",
+            "Масові операції",
+          ],
+        },
+        description: {
+          EN: [
+            "An Express server for a group training project. Despite the training nature of the task, I approached the project in a professional manner. Controllers, routers, and a separate database layer are used. Beyond the basic requirements, I implemented bulk content addition (up to hundreds of records at a time) for testing convenience. Error handling is written for all database interactions, and comprehensive documentation is created for the project's API.",
+          ],
+          DE: [
+            "Ein Express-Server für ein Gruppenprojekt. Trotz des Übungscharakters der Aufgabe habe ich das Projekt professionell angegangen. Controller, Router und eine separate Datenbankschicht werden verwendet. Über die Grundanforderungen hinaus habe ich das massenhafte Hinzufügen von Inhalten (bis zu Hunderten von Einträgen gleichzeitig) zur Erleichterung des Testens implementiert. Fehlerbehandlung ist für alle Datenbankinteraktionen geschrieben, und umfassende Dokumentation ist für die API des Projekts erstellt.",
+          ],
+          UA: [
+            "Express-сервер для групового навчального проекту. Незважаючи на тренувальний характер завдання, я підійшов до проекту по-дорослому. Використовуються контролери, роутери, робота з БД винесена в окремий шар. Понад базове ТЗ реалізовано масове додавання контенту (до сотень записів за раз) для зручності тестування. Для всіх звернень до БД написана обробка помилок, а для API проекту складена вичерпна документація.",
+          ],
+        },
+        buttons: {
+          EN: [
+            {
+              caption: "Open project",
+              url: "https://boot-library.onrender.com/",
+            },
+            {
+              caption: "Repository",
+              url: "https://github.com/Bootreen/library",
+            },
+          ],
+          DE: [
+            {
+              caption: "Projekt öffnen",
+              url: "https://boot-library.onrender.com/",
+            },
+            {
+              caption: "Repository",
+              url: "https://github.com/Bootreen/library",
+            },
+          ],
+          UA: [
+            {
+              caption: "Відкрити проект",
+              url: "https://boot-library.onrender.com/",
+            },
+            {
+              caption: "Репозиторій",
+              url: "https://github.com/Bootreen/library",
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: 14,
+      project: {
+        title: {
+          EN: "Portfolio",
+          DE: "Portfolio",
+          UA: "Портфоліо",
+        },
+        image: {
+          EN: "/portfolio.jpg",
+          DE: "/portfolio.jpg",
+          UA: "/portfolio.jpg",
+        },
+        features: {
+          EN: [
+            "Tailwind CSS + DaisyUI",
+            "Adaptive layout",
+            "Multilanguage support",
+            "Light/Dark theme",
+          ],
+          DE: [
+            "Tailwind CSS + DaisyUI",
+            "Adaptives Layout",
+            "Mehrsprachige Unterstützung",
+            "Licht/Dunkel-Thema",
+          ],
+          UA: [
+            "Tailwind CSS + DaisyUI",
+            "Адаптивний макет",
+            "Підтримка кількох мов",
+            "Світла/Темна тема",
+          ],
+        },
+        description: {
+          EN: [
+            "Who said a portfolio can't link to itself? 😎 In programming, recursion is quite normal.",
+            "Seriously though, there are many interesting solutions here, be sure to check the repository. For example, this app detects user preferences for light and dark themes and automatically applies the right one. Manual switching is also supported. All content is localized in three languages and switches on the fly.",
+            "One of the toughest features is properly displaying an HTML accordion in a grid, where the app constantly tracks the actual viewport width and adjusts the number of columns and project card sorting accordingly (see component portfolio.route.jsx).",
+          ],
+          DE: [
+            "Wer hat gesagt, dass ein Portfolio nicht auf sich selbst verlinken kann? 😎 In der Programmierung ist Rekursion ganz normal.",
+            "Aber im Ernst, hier gibt es viele interessante Lösungen, schauen Sie unbedingt im Repository vorbei. Zum Beispiel erkennt diese App Benutzerpräferenzen für helle und dunkle Themen und wählt automatisch die richtige Anzeige aus. Manuelles Umschalten wird ebenfalls unterstützt. Alle Inhalte sind in drei Sprachen lokalisiert und wechseln im laufenden Betrieb.",
+            "Eine der schwierigsten Funktionen ist die ordnungsgemäße Anzeige eines HTML-Akkordeons im Raster, bei dem die App ständig die tatsächliche Viewport-Breite überwacht und die Anzahl der Spalten und die Sortierung der Projektkarten entsprechend anpasst (siehe Komponente portfolio.route.jsx).",
+          ],
+          UA: [
+            "Хто сказав, що портфоліо не може посилатися на себе? 😎 У програмуванні рекурсія цілком звичайна річ.",
+            "А якщо серйозно, тут реалізовано багато цікавих рішень, обов'язково зазирніть у репозиторій. Наприклад, цей додаток визначає переваги користувача для світлої і темної теми та автоматично вибирає відповідний варіант. Ручне переключення також підтримується. Весь контент локалізовано на три мови і змінюється на льоту.",
+            "Одна з найскладніших функцій — правильне відображення HTML-акордеону в сітці, де додаток постійно відстежує фактичну ширину вікна і відповідно змінює кількість стовпців і сортування карток проектів (див. компонент portfolio.route.jsx).",
+          ],
+        },
+        buttons: {
+          EN: [
+            {
+              caption: "Repository",
+              url: "https://github.com/Bootreen/portfolio",
+            },
+          ],
+          DE: [
+            {
+              caption: "Repository",
+              url: "https://github.com/Bootreen/portfolio",
+            },
+          ],
+          UA: [
+            {
+              caption: "Репозиторій",
+              url: "https://github.com/Bootreen/portfolio",
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: 15,
       project: {
         title: {
           EN: "Calculator",
@@ -321,7 +471,7 @@ export const content = {
             "Підтримує ланцюжок операцій",
             "Звичайний порядок операцій",
             "Можна використовувати numpad",
-            "Десяткові та від’ємні числа",
+            "Десяткові та від'ємні числа",
           ],
         },
         description: {
@@ -332,7 +482,7 @@ export const content = {
             "Dies ist ein Taschenrechner, der mit React und React Hooks entwickelt wurde. Trotz seiner kompakten Codegröße bietet er zahlreiche Funktionen: Er zeigt den Verlauf der Operationen in einem separaten Indikator an, unterstützt die Arbeit mit Brüchen und negativen Zahlen und hält sich an die konventionelle Reihenfolge der mathematischen Operationen. Da ich ihn zu Beginn meines Frontend-Studiums geschrieben habe, führt er Berechnungen mit der eval()-Funktion durch. Wenn ich ihn jetzt schreiben würde, würde ich eine benutzerdefinierte Parser- und Berechnungslogik implementieren.",
           ],
           UA: [
-            "Це калькулятор, створений за допомогою React і React Hooks. Незважаючи на компактний розмір коду, він пропонує безліч функцій: він показує історію операцій в окремому індикаторі, підтримує роботу з дробами та від’ємними числами і дотримується звичайного порядку математичних операцій. Оскільки я розробив його на початку свого вивчення Frontend, він виконує обчислення за допомогою функції eval(). Якби я писав це зараз, я б реалізував власний парсинг і обробку обчислень.",
+            "Це калькулятор, створений за допомогою React і React Hooks. Незважаючи на компактний розмір коду, він пропонує безліч функцій: він показує історію операцій в окремому індикаторі, підтримує роботу з дробами та від'ємними числами і дотримується звичайного порядку математичних операцій. Оскільки я розробив його на початку свого вивчення Frontend, він виконує обчислення за допомогою функції eval(). Якби я писав це зараз, я б реалізував власний парсинг і обробку обчислень.",
           ],
         },
         buttons: {
@@ -358,139 +508,7 @@ export const content = {
       },
     },
     {
-      id: 9,
-      project: {
-        title: {
-          EN: "Drum Machine",
-          DE: "Drum-Maschine",
-          UA: "Драм-машина",
-        },
-        image: {
-          EN: "/drum-machine.jpg",
-          DE: "/drum-machine.jpg",
-          UA: "/drum-machine.jpg",
-        },
-        features: {
-          EN: [
-            "Custom Knob component",
-            "4 sound banks",
-            "Keyboard input",
-            "Swipe control",
-          ],
-          DE: [
-            "Benutzerdefinierter Knopf",
-            "4 Soundbänke",
-            "Tastatureingabe",
-            "Wischsteuerung",
-          ],
-          UA: [
-            "Користувальницький регулятор",
-            "4 банки звуків",
-            "Введення з клавіатури",
-            "Керування свайпом",
-          ],
-        },
-        description: {
-          EN: [
-            "In this project, I practiced sound playback in web apps and creating custom React components. I created two knob components for volume control and switching sound banks. From a more experienced developer perspective, I'd improve element addressing by using event.target instead of IDs. Despite this 'childish' approach, it works flawlessly.",
-          ],
-          DE: [
-            "In diesem Projekt habe ich die Wiedergabe von Sounds in Web-Apps und die Erstellung benutzerdefinierter React-Komponenten geübt. Ich habe zwei Knopfkomponenten für die Lautstärkeregelung und das Umschalten der Soundbänke erstellt. Aus der Sicht eines erfahreneren Entwicklers würde ich die Adressierung von HTML-Elementen durch event.target und nicht durch ID verbessern. Trotz dieses 'kindischen' Ansatzes funktioniert es einwandfrei.",
-          ],
-          UA: [
-            "У цьому проєкті я практикував відтворення звуків у веб-додатках і створення користувацьких компонентів React. Я створив два компоненти регулятора для керування гучністю та перемикання банків звуків. З точки зору досвідченішого розробника, я б покращив звернення до HTML-елементів через event.target замість ID. Незважаючи на цей 'дитячий' підхід, він працює бездоганно.",
-          ],
-        },
-        buttons: {
-          EN: [
-            {
-              caption: "View on Codepen.io",
-              url: "https://codepen.io/bootreen/pen/RwJEymx",
-            },
-          ],
-          DE: [
-            {
-              caption: "Auf Codepen.io anzeigen",
-              url: "https://codepen.io/bootreen/pen/RwJEymx",
-            },
-          ],
-          UA: [
-            {
-              caption: "Переглянути на Codepen.io",
-              url: "https://codepen.io/bootreen/pen/RwJEymx",
-            },
-          ],
-        },
-      },
-    },
-    {
-      id: 10,
-      project: {
-        title: {
-          EN: "Markdown Previewer",
-          DE: "Markdown-Vorschau",
-          UA: "Переглядач Markdown",
-        },
-        image: {
-          EN: "/markdown.jpg",
-          DE: "/markdown.jpg",
-          UA: "/markdown.jpg",
-        },
-        features: {
-          EN: [
-            "Wise tool choice",
-            "Realtime edit/view",
-            "Color syntax",
-            "Tiny: only a dozen lines!",
-          ],
-          DE: [
-            "Kluger Tool-Choice",
-            "Echtzeit Bearbeitung/Ansicht",
-            "Farbige Syntax",
-            "Klein: 10 Zeilen!",
-          ],
-          UA: [
-            "Розумний вибір інструментів",
-            "Редагування/перегляд",
-            "Підсвічування синтаксису",
-            "Малий: лише 10 рядків!",
-          ],
-        },
-        description: {
-          EN: [
-            "This small project is a great illustration of how effective toolset choice can solve application tasks without reinventing the wheel. Besides React, this app uses three libraries: Marked.js, HTML-react-parser, and Highlight.js that do all the work. As a result, the task was solved in just a few lines of code.",
-          ],
-          DE: [
-            "Dieses kleine Projekt zeigt hervorragend, wie die Wahl der richtigen Werkzeuge Anwendungsaufgaben lösen kann, ohne das Rad neu zu erfinden. Neben React verwendet diese App drei Bibliotheken: Marked.js, HTML-react-parser und Highlight.js, die die ganze Arbeit erledigen. Dadurch wurde die Aufgabe in nur wenigen Codezeilen gelöst.",
-          ],
-          UA: [
-            "Цей невеликий проєкт чудово ілюструє, як вибір правильного набору інструментів може вирішити завдання додатків без винаходу велосипеда. Крім React, цей додаток використовує три бібліотеки: Marked.js, HTML-react-parser та Highlight.js, які виконують всю роботу. В результаті завдання було вирішено всього за кілька рядків коду.",
-          ],
-        },
-        buttons: {
-          EN: [
-            {
-              caption: "View on Codepen.io",
-              url: "https://codepen.io/bootreen/pen/oNyqBzy",
-            },
-          ],
-          DE: [
-            {
-              caption: "Auf Codepen.io anzeigen",
-              url: "https://codepen.io/bootreen/pen/oNyqBzy",
-            },
-          ],
-          UA: [
-            {
-              caption: "Переглянути на Codepen.io",
-              url: "https://codepen.io/bootreen/pen/oNyqBzy",
-            },
-          ],
-        },
-      },
-    },
-    {
-      id: 7,
+      id: 16,
       project: {
         title: {
           EN: "ToDo Reminder",
@@ -568,7 +586,7 @@ export const content = {
       },
     },
     {
-      id: 8,
+      id: 17,
       project: {
         title: {
           EN: "User DB Viewer",
@@ -649,7 +667,139 @@ export const content = {
       },
     },
     {
-      id: 11,
+      id: 18,
+      project: {
+        title: {
+          EN: "Drum Machine",
+          DE: "Drum-Maschine",
+          UA: "Драм-машина",
+        },
+        image: {
+          EN: "/drum-machine.jpg",
+          DE: "/drum-machine.jpg",
+          UA: "/drum-machine.jpg",
+        },
+        features: {
+          EN: [
+            "Custom Knob component",
+            "4 sound banks",
+            "Keyboard input",
+            "Swipe control",
+          ],
+          DE: [
+            "Benutzerdefinierter Knopf",
+            "4 Soundbänke",
+            "Tastatureingabe",
+            "Wischsteuerung",
+          ],
+          UA: [
+            "Користувальницький регулятор",
+            "4 банки звуків",
+            "Введення з клавіатури",
+            "Керування свайпом",
+          ],
+        },
+        description: {
+          EN: [
+            "In this project, I practiced sound playback in web apps and creating custom React components. I created two knob components for volume control and switching sound banks. From a more experienced developer perspective, I'd improve element addressing by using event.target instead of IDs. Despite this 'childish' approach, it works flawlessly.",
+          ],
+          DE: [
+            "In diesem Projekt habe ich die Wiedergabe von Sounds in Web-Apps und die Erstellung benutzerdefinierter React-Komponenten geübt. Ich habe zwei Knopfkomponenten für die Lautstärkeregelung und das Umschalten der Soundbänke erstellt. Aus der Sicht eines erfahreneren Entwicklers würde ich die Adressierung von HTML-Elementen durch event.target und nicht durch ID verbessern. Trotz dieses 'kindischen' Ansatzes funktioniert es einwandfrei.",
+          ],
+          UA: [
+            "У цьому проєкті я практикував відтворення звуків у веб-додатках і створення користувацьких компонентів React. Я створив два компоненти регулятора для керування гучністю та перемикання банків звуків. З точки зору досвідченішого розробника, я б покращив звернення до HTML-елементів через event.target замість ID. Незважаючи на цей 'дитячий' підхід, він працює бездоганно.",
+          ],
+        },
+        buttons: {
+          EN: [
+            {
+              caption: "View on Codepen.io",
+              url: "https://codepen.io/bootreen/pen/RwJEymx",
+            },
+          ],
+          DE: [
+            {
+              caption: "Auf Codepen.io anzeigen",
+              url: "https://codepen.io/bootreen/pen/RwJEymx",
+            },
+          ],
+          UA: [
+            {
+              caption: "Переглянути на Codepen.io",
+              url: "https://codepen.io/bootreen/pen/RwJEymx",
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: 19,
+      project: {
+        title: {
+          EN: "Markdown Previewer",
+          DE: "Markdown-Vorschau",
+          UA: "Переглядач Markdown",
+        },
+        image: {
+          EN: "/markdown.jpg",
+          DE: "/markdown.jpg",
+          UA: "/markdown.jpg",
+        },
+        features: {
+          EN: [
+            "Wise tool choice",
+            "Realtime edit/view",
+            "Color syntax",
+            "Tiny: only a dozen lines!",
+          ],
+          DE: [
+            "Kluger Tool-Choice",
+            "Echtzeit Bearbeitung/Ansicht",
+            "Farbige Syntax",
+            "Klein: 10 Zeilen!",
+          ],
+          UA: [
+            "Розумний вибір інструментів",
+            "Редагування/перегляд",
+            "Підсвічування синтаксису",
+            "Малий: лише 10 рядків!",
+          ],
+        },
+        description: {
+          EN: [
+            "This small project is a great illustration of how effective toolset choice can solve application tasks without reinventing the wheel. Besides React, this app uses three libraries: Marked.js, HTML-react-parser, and Highlight.js that do all the work. As a result, the task was solved in just a few lines of code.",
+          ],
+          DE: [
+            "Dieses kleine Projekt zeigt hervorragend, wie die Wahl der richtigen Werkzeuge Anwendungsaufgaben lösen kann, ohne das Rad neu zu erfinden. Neben React verwendet diese App drei Bibliotheken: Marked.js, HTML-react-parser und Highlight.js, die die ganze Arbeit erledigen. Dadurch wurde die Aufgabe in nur wenigen Codezeilen gelöst.",
+          ],
+          UA: [
+            "Цей невеликий проєкт чудово ілюструє, як вибір правильного набору інструментів може вирішити завдання додатків без винаходу велосипеда. Крім React, цей додаток використовує три бібліотеки: Marked.js, HTML-react-parser та Highlight.js, які виконують всю роботу. В результаті завдання було вирішено всього за кілька рядків коду.",
+          ],
+        },
+        buttons: {
+          EN: [
+            {
+              caption: "View on Codepen.io",
+              url: "https://codepen.io/bootreen/pen/oNyqBzy",
+            },
+          ],
+          DE: [
+            {
+              caption: "Auf Codepen.io anzeigen",
+              url: "https://codepen.io/bootreen/pen/oNyqBzy",
+            },
+          ],
+          UA: [
+            {
+              caption: "Переглянути на Codepen.io",
+              url: "https://codepen.io/bootreen/pen/oNyqBzy",
+            },
+          ],
+        },
+      },
+    },
+    {
+      id: 20,
       project: {
         title: {
           EN: "Laptop Store Mockup",
@@ -730,7 +880,7 @@ export const content = {
       },
     },
     {
-      id: 12,
+      id: 21,
       project: {
         title: {
           EN: "Tribute Page",
@@ -799,79 +949,7 @@ export const content = {
       },
     },
     {
-      id: 5,
-      project: {
-        title: {
-          EN: "Portfolio",
-          DE: "Portfolio",
-          UA: "Портфоліо",
-        },
-        image: {
-          EN: "/portfolio.jpg",
-          DE: "/portfolio.jpg",
-          UA: "/portfolio.jpg",
-        },
-        features: {
-          EN: [
-            "Tailwind CSS + DaisyUI",
-            "Adaptive layout",
-            "Multilanguage support",
-            "Light/Dark theme",
-          ],
-          DE: [
-            "Tailwind CSS + DaisyUI",
-            "Adaptives Layout",
-            "Mehrsprachige Unterstützung",
-            "Licht/Dunkel-Thema",
-          ],
-          UA: [
-            "Tailwind CSS + DaisyUI",
-            "Адаптивний макет",
-            "Підтримка кількох мов",
-            "Світла/Темна тема",
-          ],
-        },
-        description: {
-          EN: [
-            "Who said a portfolio can't link to itself? 😎 In programming, recursion is quite normal.",
-            "Seriously though, there are many interesting solutions here, be sure to check the repository. For example, this app detects user preferences for light and dark themes and automatically applies the right one. Manual switching is also supported. All content is localized in three languages and switches on the fly.",
-            "One of the toughest features is properly displaying an HTML accordion in a grid, where the app constantly tracks the actual viewport width and adjusts the number of columns and project card sorting accordingly (see component portfolio.route.jsx).",
-          ],
-          DE: [
-            "Wer hat gesagt, dass ein Portfolio nicht auf sich selbst verlinken kann? 😎 In der Programmierung ist Rekursion ganz normal.",
-            "Aber im Ernst, hier gibt es viele interessante Lösungen, schauen Sie unbedingt im Repository vorbei. Zum Beispiel erkennt diese App Benutzerpräferenzen für helle und dunkle Themen und wählt automatisch die richtige Anzeige aus. Manuelles Umschalten wird ebenfalls unterstützt. Alle Inhalte sind in drei Sprachen lokalisiert und wechseln im laufenden Betrieb.",
-            "Eine der schwierigsten Funktionen ist die ordnungsgemäße Anzeige eines HTML-Akkordeons im Raster, bei dem die App ständig die tatsächliche Viewport-Breite überwacht und die Anzahl der Spalten und die Sortierung der Projektkarten entsprechend anpasst (siehe Komponente portfolio.route.jsx).",
-          ],
-          UA: [
-            "Хто сказав, що портфоліо не може посилатися на себе? 😎 У програмуванні рекурсія цілком звичайна річ.",
-            "А якщо серйозно, тут реалізовано багато цікавих рішень, обов'язково зазирніть у репозиторій. Наприклад, цей додаток визначає переваги користувача для світлої і темної теми та автоматично вибирає відповідний варіант. Ручне переключення також підтримується. Весь контент локалізовано на три мови і змінюється на льоту.",
-            "Одна з найскладніших функцій — правильне відображення HTML-акордеону в сітці, де додаток постійно відстежує фактичну ширину вікна і відповідно змінює кількість стовпців і сортування карток проектів (див. компонент portfolio.route.jsx).",
-          ],
-        },
-        buttons: {
-          EN: [
-            {
-              caption: "Repository",
-              url: "https://github.com/Bootreen/portfolio",
-            },
-          ],
-          DE: [
-            {
-              caption: "Repository",
-              url: "https://github.com/Bootreen/portfolio",
-            },
-          ],
-          UA: [
-            {
-              caption: "Репозиторій",
-              url: "https://github.com/Bootreen/portfolio",
-            },
-          ],
-        },
-      },
-    },
-    {
-      id: 13,
+      id: 22,
       project: {
         title: {
           EN: "Pomodoro Clock",
@@ -931,84 +1009,6 @@ export const content = {
             {
               caption: "Переглянути на Codepen.io",
               url: "https://codepen.io/bootreen/pen/zYLYOZP",
-            },
-          ],
-        },
-      },
-    },
-    {
-      id: 3,
-      project: {
-        title: {
-          EN: "Library Backend",
-          DE: "Bibliotheks-Backend",
-          UA: "Бекенд бібліотеки",
-        },
-        image: {
-          EN: "/library.jpg",
-          DE: "/library.jpg",
-          UA: "/library.jpg",
-        },
-        features: {
-          EN: [
-            "Express + PostgreSQL",
-            "Textbook project structure",
-            "Error handling",
-            "Bulk operations",
-          ],
-          DE: [
-            "Express + PostgreSQL",
-            "Vorbildliche Projektstruktur",
-            "Fehlerbehandlung",
-            "Massenoperationen",
-          ],
-          UA: [
-            "Express + PostgreSQL",
-            "Класична структура проекту",
-            "Обробка помилок",
-            "Масові операції",
-          ],
-        },
-        description: {
-          EN: [
-            "An Express server for a group training project. Despite the training nature of the task, I approached the project in a professional manner. Controllers, routers, and a separate database layer are used. Beyond the basic requirements, I implemented bulk content addition (up to hundreds of records at a time) for testing convenience. Error handling is written for all database interactions, and comprehensive documentation is created for the project's API.",
-          ],
-          DE: [
-            "Ein Express-Server für ein Gruppenprojekt. Trotz des Übungscharakters der Aufgabe habe ich das Projekt professionell angegangen. Controller, Router und eine separate Datenbankschicht werden verwendet. Über die Grundanforderungen hinaus habe ich das massenhafte Hinzufügen von Inhalten (bis zu Hunderten von Einträgen gleichzeitig) zur Erleichterung des Testens implementiert. Fehlerbehandlung ist für alle Datenbankinteraktionen geschrieben, und umfassende Dokumentation ist für die API des Projekts erstellt.",
-          ],
-          UA: [
-            "Express-сервер для групового навчального проекту. Незважаючи на тренувальний характер завдання, я підійшов до проекту по-дорослому. Використовуються контролери, роутери, робота з БД винесена в окремий шар. Понад базове ТЗ реалізовано масове додавання контенту (до сотень записів за раз) для зручності тестування. Для всіх звернень до БД написана обробка помилок, а для API проекту складена вичерпна документація.",
-          ],
-        },
-        buttons: {
-          EN: [
-            {
-              caption: "Open project",
-              url: "https://boot-library.onrender.com/",
-            },
-            {
-              caption: "Repository",
-              url: "https://github.com/Bootreen/library",
-            },
-          ],
-          DE: [
-            {
-              caption: "Projekt öffnen",
-              url: "https://boot-library.onrender.com/",
-            },
-            {
-              caption: "Repository",
-              url: "https://github.com/Bootreen/library",
-            },
-          ],
-          UA: [
-            {
-              caption: "Відкрити проект",
-              url: "https://boot-library.onrender.com/",
-            },
-            {
-              caption: "Репозиторій",
-              url: "https://github.com/Bootreen/library",
             },
           ],
         },
