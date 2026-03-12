@@ -52,8 +52,8 @@ export const content = {
       id: 9,
       project: {
         title: {
-          EN: "Mria Theater Website",
-          DE: "Webseite des Theaters Mria",
+          EN: "Mriya Theater Website",
+          DE: "Theaters Mriya Webseite",
           UA: "Вебсайт театру Мрія",
         },
         image: {
@@ -78,16 +78,16 @@ export const content = {
             "Next.js + Mantine UI",
             "Багатомовний з навігацією свайпом",
             "Фідбек-форма через Nodemailer",
-            "Галерея з автовирівнюванням тамбнейлів",
+            "Адаптивна фотогалерея",
           ],
         },
         description: {
           EN: [
-            "Website for Mria — the first Ukrainian theater in Bonn. Built with Next.js and Mantine UI, the site is fully responsive and supports three languages. On mobile, sections are navigated via swipe gestures. A contact form is powered by Nodemailer, and the photo gallery features automatic thumbnail alignment.",
+            "Website for Mriya — the first Ukrainian theater in Bonn. Built with Next.js and Mantine UI, the site is fully responsive and supports three languages. On mobile, sections are navigated via swipe gestures. A contact form is powered by Nodemailer, and the photo gallery features automatic thumbnail alignment.",
             "Currently in development: migration of content to Supabase and a matching admin panel for easier updates.",
           ],
           DE: [
-            "Webseite für Mria — das erste ukrainische Theater in Bonn. Entwickelt mit Next.js und Mantine UI, vollständig responsiv und dreisprachig. Auf mobilen Geräten kann zwischen den Abschnitten per Swipe gewechselt werden. Das Kontaktformular basiert auf Nodemailer, die Fotogalerie richtet Vorschaubilder automatisch aus.",
+            "Webseite für Mriya — das erste ukrainische Theater in Bonn. Entwickelt mit Next.js und Mantine UI, vollständig responsiv und dreisprachig. Auf mobilen Geräten kann zwischen den Abschnitten per Swipe gewechselt werden. Das Kontaktformular basiert auf Nodemailer, die Fotogalerie richtet Vorschaubilder automatisch aus.",
             "In Entwicklung: Migration der Inhalte auf Supabase sowie ein dazugehöriges Admin-Panel für komfortablere Aktualisierungen.",
           ],
           UA: [
