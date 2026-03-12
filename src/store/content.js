@@ -1017,7 +1017,7 @@ export const content = {
   ],
   cv: [
     {
-      date: { EN: "from Sep 2025", DE: "seit Sep. 2024", UA: "з вер. 2024" },
+      date: { EN: "from Sep 2025", DE: "seit Sep. 2025", UA: "з вер. 2025" },
       title: {
         EN: "Volunteer Web-Developer",
         DE: "Ehrenamtlicher Webentwickler",
